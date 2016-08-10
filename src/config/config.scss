@@ -2,7 +2,7 @@ $primary-font: 'Arvo';
 $secondary-font: 'Raleway';
 
 $background-color: #2B3A42;
-$foreground-color: #dddddd;
+$foreground-color: #759db2 ;
 $foreground-accent-color: #BDD4DE;
 
 $accent-color: #FF530D;
@@ -13,4 +13,9 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $primary-font, serif;
+}
+
+hr {
+	border-top: 1px solid $foreground-color;
+	border-bottom: 1px solid darken($foreground-color, 40%);
 }

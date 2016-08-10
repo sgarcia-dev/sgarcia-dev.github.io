@@ -26,6 +26,15 @@
 		transform: translateY(0);
 	}
 }
+.fade-in-left {
+	opacity: 0;
+	transition: opacity 0.5s, transform 0.5s ease-out;
+	transform: translateX(5%);
+	&.is-revealed {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
 .fade-in-up {
 	opacity: 0;
 	transition: opacity 0.5s, transform 0.5s ease-out;

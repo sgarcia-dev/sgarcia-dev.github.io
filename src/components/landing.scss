@@ -1,6 +1,18 @@
 .l-landing {
 	padding-top: 20rem;
 	padding-bottom: 14rem;
+	.landing-nav-icons {
+		a {
+			color: $foreground-color;
+			font-size: 3rem;
+			transition: color 0.3s;
+			margin-right: 1rem;
+			text-decoration: none;
+			&:hover {
+				color: $foreground-accent-color;
+			}
+		}
+	}
 	.block-header {
 		color: $foreground-accent-color;
 	}

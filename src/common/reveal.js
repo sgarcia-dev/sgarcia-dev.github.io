@@ -7,7 +7,7 @@ module.exports = {
 
 function init(config) {
 	if (config) {
-		reveal.offset = config.offset || 0;
+		reveal.offset = config.offset || 0
 	}
 
 	reveal.elements = [];
