@@ -4,11 +4,13 @@
 
 .block-header {
 	font-size: 6rem;
+	color: $foreground-color;
 }
 
 .block-text {
-	font-size: 3.5rem;
 	font-family: $secondary-font, sans-serif;
+	font-size: 3.5rem;
+	color: $foreground-color;
 }
 
 /* Larger than phablet */
@@ -17,7 +19,7 @@
 		font-size: 8rem;
 	}
 	.block-text {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 }
 

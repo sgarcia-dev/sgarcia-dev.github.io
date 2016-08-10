@@ -1,6 +1,15 @@
 $primary-font: 'Arvo';
 $secondary-font: 'Raleway';
-$accent-color: #DEB887;
+
+$background-color: #2B3A42;
+$foreground-color: #EFEFEF;
+$foreground-accent-color: #BDD4DE;
+
+$accent-color: #FF530D;
+
+body {
+	background-color: $background-color;
+}
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $primary-font, serif;
