@@ -1,0 +1,67 @@
+$navbar-padding: 2em;
+.l-navbar {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	.navbar-left, .navbar-right {
+		padding-top: $navbar-padding;
+	}
+	.navbar-left {
+		padding-left: $navbar-padding;
+		float: left;
+		> * {
+			margin-right: $navbar-padding / 2;
+		}
+	}
+	.navbar-right {
+		display: none;
+		padding-right: $navbar-padding;
+		float: right;
+		> * {
+			margin-left: $navbar-padding / 2;
+		}
+	}
+	.navbar-link {
+		font-size: 2rem;
+		font-weight: bold;
+		text-decoration: none;
+		color: black;
+	}
+}
+#logo {
+	display: inline-block;
+	height: 12rem;
+	width: 12rem;
+	font-size: 5rem;
+	line-height: 12rem;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#logo-text {
+	display: inline-block;
+	font-family: $secondary-font, sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+}
+@media (min-width: 400px) {
+	#logo {
+		height: 9rem;
+		width: 9rem;
+		font-size: 3.5rem;
+		line-height: 9rem;
+	}
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+	.l-navbar .navbar-right {
+		display: block;
+	}
+
+	#logo {
+		height: 6rem;
+		width: 6rem;
+		font-size: 2rem;
+		line-height: 6rem;
+	}
+}

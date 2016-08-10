@@ -1,6 +1,14 @@
 .l-landing {
-  height: 50vh;
-  .main-header, .secondary-header {
-    text-align: center;
-  }
+	padding-top: 20vh;
+	padding-bottom: 10vh;
+	.block-header {
+		font-size: 8rem;
+	}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.l-landing {
+		padding-top: 40vh;
+	}
 }

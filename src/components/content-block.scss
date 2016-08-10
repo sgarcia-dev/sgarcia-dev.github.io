@@ -1,8 +1,23 @@
-.l-content-block, .l-content-block-inverse {
-  height: 50vh;
+.l-block {
+  padding: 10vh 0;
 }
 
-.l-content-block-inverse {
-  background-color: black;
-  color: white;
+.block-header {
+	font-size: 5rem;
+}
+
+.block-text {
+	font-size: 3rem;
+	font-family: $secondary-font, sans-serif;
+}
+
+/* Larger than phablet */
+@media (min-width: 750px) {
+	.block-header {
+		font-size: 8rem;
+	}
+
+	.block-text {
+		padding-left: 5vw;
+	}
 }

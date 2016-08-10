@@ -1,5 +1,42 @@
 .is-v-centered {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
+
+.fills-parent-h {
+	position: relative;
+	height: 100%;
+}
+
+.is-link-text {
+	cursor: pointer;
+	user-select: none;
+}
+
+html {
+	font-size: 5px;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	html {
+		font-size: 7px;
+	}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {  }
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
