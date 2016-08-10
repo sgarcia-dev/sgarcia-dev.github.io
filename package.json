@@ -1,0 +1,41 @@
+{
+  "name": "sgarcia-dev.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgarcia-dev/sgarcia-dev.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgarcia-dev/sgarcia-dev.github.io/issues"
+  },
+  "homepage": "https://github.com/sgarcia-dev/sgarcia-dev.github.io#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.5",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-flatten": "^0.3.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
