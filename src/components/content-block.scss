@@ -1,5 +1,5 @@
 .l-block {
-  padding: 10vh 0;
+  padding: 2rem 0 14rem 0;
 }
 
 .block-header {
@@ -10,7 +10,11 @@
 .block-text {
 	font-family: $secondary-font, sans-serif;
 	font-size: 3.5rem;
+	line-height: 1.8em;
 	color: $foreground-color;
+	b {
+		color: $foreground-accent-color;
+	}
 }
 
 /* Larger than phablet */
@@ -20,6 +24,7 @@
 	}
 	.block-text {
 		font-size: 2.5rem;
+		padding-left: 5vw;
 	}
 }
 

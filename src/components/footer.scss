@@ -1,0 +1,8 @@
+.l-footer {
+	padding: 10rem 0 20rem 0;
+	background-color: darken($background-color, 10%);
+	color: $foreground-accent-color;
+	.description {
+		text-align: center;
+	}
+}

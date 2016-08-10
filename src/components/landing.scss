@@ -1,6 +1,6 @@
 .l-landing {
-	padding-top: 150px;
-	padding-bottom: 10vh;
+	padding-top: 20rem;
+	padding-bottom: 14rem;
 	.block-header {
 		color: $foreground-accent-color;
 	}
@@ -9,6 +9,13 @@
 /* Larger than phablet */
 @media (min-width: 750px) {
 	.l-landing {
-		padding-top: 35vh;
+		padding-top: 30rem;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	.l-landing {
+		padding-top: 30rem;
 	}
 }

@@ -1,2 +1,7 @@
 require('./config/config');
-require('./common/reveal');
+
+var reveal = require('./common/reveal');
+
+reveal.init({
+	offset: 0.2
+});
