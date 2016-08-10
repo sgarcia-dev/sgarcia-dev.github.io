@@ -26,6 +26,10 @@ $navbar-padding: 2em;
 		font-weight: bold;
 		text-decoration: none;
 		color: black;
+		transition: color 0.3s;
+		&:hover {
+			color: $accent-color;
+		}
 	}
 }
 #logo {
@@ -34,16 +38,16 @@ $navbar-padding: 2em;
 	width: 12rem;
 	font-size: 5rem;
 	line-height: 12rem;
-	background-color: black;
+	background-color: $accent-color;
 	color: white;
 	text-align: center;
+	transition: color 0.5s, background-color 0.5s;
+	&:hover {
+		color: white;
+		background-color: black;
+	}
 }
-#logo-text {
-	display: inline-block;
-	font-family: $secondary-font, sans-serif;
-	font-size: 2rem;
-	font-weight: bold;
-}
+
 @media (min-width: 400px) {
 	#logo {
 		height: 9rem;

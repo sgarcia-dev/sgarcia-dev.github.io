@@ -1,14 +1,14 @@
 .l-landing {
-	padding-top: 20vh;
+	padding-top: 150px;
 	padding-bottom: 10vh;
 	.block-header {
-		font-size: 8rem;
+		color: $accent-color;
 	}
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 750px) {
 	.l-landing {
-		padding-top: 40vh;
+		padding-top: 35vh;
 	}
 }

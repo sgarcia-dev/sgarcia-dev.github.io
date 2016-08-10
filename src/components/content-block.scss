@@ -3,11 +3,11 @@
 }
 
 .block-header {
-	font-size: 5rem;
+	font-size: 6rem;
 }
 
 .block-text {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-family: $secondary-font, sans-serif;
 }
 
@@ -16,7 +16,13 @@
 	.block-header {
 		font-size: 8rem;
 	}
+	.block-text {
+		font-size: 3rem;
+	}
+}
 
+/* Larger than desktop */
+@media (min-width: 1000px) {
 	.block-text {
 		padding-left: 5vw;
 	}
