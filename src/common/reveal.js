@@ -20,7 +20,7 @@ function init(config) {
 				});
 			});
 
-		window.addEventListener('scroll', util.throttle(checkForRevealElements, 250));
+		window.addEventListener('scroll', util.throttle(checkForRevealElements, 150));
 		checkForRevealElements();
 	});
 }

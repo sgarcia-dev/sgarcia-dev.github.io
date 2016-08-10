@@ -19,3 +19,11 @@ hr {
 	border-top: 1px solid $foreground-color;
 	border-bottom: 1px solid darken($foreground-color, 40%);
 }
+
+label {
+	color: $foreground-color;
+}
+
+input[type=submit] {
+	background-color: white;
+}
