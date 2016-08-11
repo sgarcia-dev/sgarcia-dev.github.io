@@ -1,3 +1,5 @@
+var util = require('./util');
+
 module.exports = {
     init: init
 };
@@ -7,15 +9,27 @@ function init() {
         var links = document.getElementsByClassName('scroll-link'),
             linkNumber = links.length;
 
-        console.log(links);
-
         for (var i = 0; i < linkNumber; i++){
             links[i].addEventListener('click', function (e) {
                 e.preventDefault();
-                smoothScrollTo(e.target.getAttribute('href'), 500);
+                smoothScrollTo(e.target.getAttribute('href'), 1200);
             });
         }
+
+        scrollUpInit();
     })
+}
+
+function scrollUpInit() {
+	var scrollEl = document.getElementById('scroll-up');
+	window.addEventListener('scroll', util.throttle(function () {
+		var scrollPosition = window.pageYOffset || document.scrollTop;
+		if (scrollPosition <= (window.innerHeight)) {
+			scrollEl.classList.remove('is-visible');
+		} else {
+			scrollEl.classList.add('is-visible');
+		}
+	}, 150));
 }
 
 function smoothScrollTo(target, duration, element) {

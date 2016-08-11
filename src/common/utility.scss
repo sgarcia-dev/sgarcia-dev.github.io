@@ -9,7 +9,16 @@
 	height: 100%;
 }
 
+.fills-parent-width {
+	position: relative;
+	width: 100%;
+}
+
 .is-link-text {
 	cursor: pointer;
 	user-select: none;
+}
+
+.is-relatively-positioned {
+	position: relative;
 }

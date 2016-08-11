@@ -55,7 +55,7 @@ gulp.task('images', function() {
             // as hooks for embedding and styling
             svgoPlugins: [{cleanupIDs: false}]
         })))
-        .pipe(gulp.dest(url('src')));
+        .pipe(gulp.dest(url('dist', 'images')));
 });
 
 gulp.task('clean', dp.del.bind(null, ['dist']));

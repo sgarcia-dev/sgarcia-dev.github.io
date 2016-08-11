@@ -23,13 +23,9 @@ $navbar-padding: 2em;
 		}
 	}
 	.navbar-link {
-		font-size: 2rem;
 		font-weight: bold;
-		text-decoration: none;
-		color: $foreground-color;
 		transition: color 0.3s;
 		&:hover {
-			color: $accent-color;
 		}
 	}
 }

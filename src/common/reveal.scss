@@ -1,6 +1,14 @@
 .reveal {
 }
 
+.slide-in-right {
+	transform: translateX(-101%);
+	transition: 1s transform ease-out;
+	&.is-revealed {
+		transform: translateX(0);
+	}
+}
+
 .fade-in {
 	opacity: 0;
 	transition: opacity 0.5s;

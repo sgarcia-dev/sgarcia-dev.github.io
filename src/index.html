@@ -9,21 +9,24 @@
     <link rel="stylesheet" href="dist/index.css">
 </head>
 <body>
-<!--<div class="scroll-up">
-    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-</div>-->
-<nav class="l-navbar reveal fade-in-down" data-reveal-offset="0">
+<div id="scroll-up">
+	<a href="#l-landing" class="scroll-link">up
+		<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+	</a>
+</div>
+<nav class="l-navbar reveal fade-in-down" data-reveal-offset="0.7">
     <div class="fills-parent-h navbar-left">
         <div id="logo" class="is-link-text">SG</div>
     </div>
     <div class="fills-parent-h navbar-right">
+		<a class="navbar-link scroll-link" href="#l-about">About</a>
         <a class="navbar-link scroll-link" href="#l-projects">Projects</a>
         <a class="navbar-link" href="https://medium.com/@sgarcia.dev">Blog</a>
         <a class="navbar-link scroll-link" href="#l-contact">Contact</a>
     </div>
 </nav>
 
-<section class="l-landing reveal">
+<section id="l-landing" class="l-landing reveal">
     <div class="container">
         <div class="reveal fade-in-left">
             <h1 class="block-header">Web Developer,<br>Aspiring Designer,<br>Tech Enthusiast & Blogger.</h1>
@@ -51,6 +54,60 @@
             or <b>code quality</b>.
         </p>
     </div>
+</section>
+
+<section id="l-about" class="l-block">
+	<div class="container">
+		<div class="reveal fade-in-left">
+			<h2 class="block-header">About</h2>
+			<h6 class="block-subheader">Get to know me</h6>
+			<hr>
+		</div>
+		<div class="content reveal fade-in-up" data-reveal-offset="0.5">
+			<div class="row">
+				<div class="seven columns">
+					<h5>Education</h5>
+					<ul>
+						<li><i>Bachelor's degree in software development</i> (2010-2013), TecMilenio University. Graduated with honors.</li>
+					</ul>
+					<h5>Work Experience</h5>
+					<ul>
+						<li>Front End Developer (2014, 2016), Inflection Point Systems.</li>
+						<li>Front End Developer (2014, 2016), Accenture (Avanade).</li>
+						<li>Jr .NET Developer (2014), Zentius.</li>
+					</ul>
+				</div>
+				<div class="five columns">
+					<h5>Skills</h5>
+					<div class="skill">
+						<div class="bar reveal slide-in-right" data-reveal-offset="1" style="width: 90%"></div>
+						<div class="bar-label">JavaScript</div>
+						<div class="bar-placeholder"></div>
+					</div>
+					<div class="skill">
+						<div class="bar reveal slide-in-right" data-reveal-offset="1.2" style="width: 75%"></div>
+						<div class="bar-label">HTML/CSS</div>
+						<div class="bar-placeholder"></div>
+					</div>
+					<div class="skill">
+						<div class="bar reveal slide-in-right" data-reveal-offset="1.4" style="width: 70%"></div>
+						<div class="bar-label">Responsive Design</div>
+						<div class="bar-placeholder"></div>
+					</div>
+					<div class="skill">
+						<div class="bar reveal slide-in-right" data-reveal-offset="1.6" style="width: 70%"></div>
+						<div class="bar-label">AngularJS</div>
+						<div class="bar-placeholder"></div>
+					</div>
+					<div class="skill">
+						<div class="bar reveal slide-in-right" data-reveal-offset="1.8" style="width: 50%"></div>
+						<div class="bar-label">NodeJS</div>
+						<div class="bar-placeholder"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section id="l-projects" class="l-block">
