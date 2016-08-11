@@ -4,9 +4,11 @@
 @import "config/config";
 @import "common/utility";
 @import "common/reveal";
+@import "common/scroll";
 @import "components/navbar";
 @import "components/landing";
 @import "components/content-block";
+@import "components/projects";
 @import "components/footer";
 
 /* Larger than mobile */

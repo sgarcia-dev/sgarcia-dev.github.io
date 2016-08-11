@@ -2,13 +2,26 @@ $primary-font: 'Arvo';
 $secondary-font: 'Raleway';
 
 $background-color: #2B3A42;
+$background-accent-color: darken($background-color, 7%);
 $foreground-color: #759db2 ;
 $foreground-accent-color: #BDD4DE;
 
 $accent-color: #FF530D;
 
+html {
+	font-size: 5px;
+}
+
 body {
 	background-color: $background-color;
+}
+
+a {
+	color: $foreground-accent-color;
+	transition: color 0.3s;
+	&:hover {
+		color: $accent-color;
+	}
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -20,10 +33,83 @@ hr {
 	border-bottom: 1px solid darken($foreground-color, 40%);
 }
 
+input[type=submit] {
+	background-color: white;
+}
+
 label {
+	font-weight: normal;
+	font-size: 2.5rem;
+	line-height: 2em;
+	color: $foreground-accent-color;
+}
+
+input[type=text], input[type=email], textarea {
+	font-size: 2.5rem;
+	line-height: 1.5em;
+	font-weight: 100;
 	color: $foreground-color;
+	background-color: $background-accent-color;
+	border-radius: 0;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	transition: border 0.3s;
+	&::-webkit-input-placeholder {
+		color: $foreground-accent-color;
+	}
+	&:focus {
+		border: 1px solid $foreground-color;
+		outline: 0;
+	}
+}
+
+textarea {
+	min-height: 5em * 1.5;
 }
 
 input[type=submit] {
-	background-color: white;
+	text-align: left;
+	font-size: 3rem;
+	color: $foreground-accent-color;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	height: auto;
+	padding: 0;
+	font-weight: lighter;
+	transition: color 0.3s;
+	&:hover {
+		color: $accent-color;
+	}
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	html {
+		font-size: 7px;
+	}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	.container {
+		&.wide {
+			width: 90%;
+			max-width: 1200px;
+		}
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	html {
+		font-size: 10px;
+	}
 }

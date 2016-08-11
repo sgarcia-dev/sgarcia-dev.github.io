@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="dist/index.css">
 </head>
 <body>
+<!--<div class="scroll-up">
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+</div>-->
 <nav class="l-navbar reveal fade-in-down" data-reveal-offset="0">
     <div class="fills-parent-h navbar-left">
         <div id="logo" class="is-link-text">SG</div>
     </div>
     <div class="fills-parent-h navbar-right">
-        <a class="navbar-link scroll-link" href="#l-work">Work</a>
+        <a class="navbar-link scroll-link" href="#l-projects">Projects</a>
         <a class="navbar-link" href="https://medium.com/@sgarcia.dev">Blog</a>
         <a class="navbar-link scroll-link" href="#l-contact">Contact</a>
     </div>
@@ -50,25 +53,47 @@
     </div>
 </section>
 
-<section id="l-work" class="l-block">
+<section id="l-projects" class="l-block">
     <div class="container">
         <div class="reveal fade-in-left">
-            <h2 class="block-header">Work</h2>
+            <h2 class="block-header">Projects</h2>
+            <h6 class="block-subheader">What I've been up to</h6>
             <hr>
         </div>
-        <p class="block-text reveal fade-in-up" data-reveal-offset="0.5">Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Amet esse fugiat hic provident quis repellat similique veritatis. Atque consectetur et
-            illum, iure nesciunt non odit quas repudiandae rerum, sint, suscipit? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aut possimus repudiandae veritatis voluptatum? Asperiores distinctio eos est
-            eveniet, harum minus nulla quis quo! Commodi distinctio, exercitationem ipsum non voluptates voluptatum.</p>
-        <p class="block-text reveal fade-in-up" data-reveal-offset="0.5">Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Ad aperiam consequuntur dolorem facere nam non qui sequi temporibus totam ut. Aliquam
-            assumenda dolorem excepturi inventore molestiae nam possimus recusandae reiciendis.</p>
-        <p class="block-text reveal fade-in-up" data-reveal-offset="0.5">Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Aliquam aliquid commodi cupiditate distinctio ea, esse explicabo itaque laudantium magnam
-            magni officia optio quaerat quasi quia repellendus repudiandae sint soluta tempora. Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Animi commodi consectetur cumque ex explicabo id incidunt iure maiores
-            nemo, non nulla obcaecati odit optio porro quibusdam quo ratione rerum veritatis.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="six columns">
+                <div class="card reveal fade-in-up">
+                    <div class="content header">
+                        <h3>Precision Agriculture</h3>
+                        <div class="card-footer">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            <br>
+                            <span>AngularJS, Ionic Framework</span>
+                        </div>
+                    </div>
+                    <div class="content description">
+                        <p>Developed a farm automation iPad app for a Forbes 500 company. Tasks included front end programming with AngularJS, Ionic framework and CSS, setting up the CI pipeline, testing, and proposing solutions to technological an performance barriers for the client's needs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="six columns">
+                <div class="card reveal fade-in-up">
+                    <div class="content header">
+                        <h3>University Site</h3>
+                        <div class="card-footer">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            <br>
+                            <span>Foundation, Sass</span>
+                        </div>
+                    </div>
+                    <div class="content description">
+                        <p>Developed a responsive website built of individual, sitecore compatible components for an US based medical university. Responsibilities included setting up continuous integration and working on the front end components</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -76,10 +101,12 @@
     <div class="container">
         <div class="header reveal fade-in-left">
             <h2 class="block-header">Contact</h2>
+            <h6 class="block-subheader">Let's talk.</h6>
             <hr>
         </div>
-        <div class="content">
-            <form action="//formspree.io/sgarcia.dev@gmail.com" method="POST">
+        <div class="content reveal fade-in-up">
+            <form action="https://formspree.io/sgarcia.dev@gmail.com"
+                  method="POST">
                 <label for="email" class="form-label">Email</label>
                 <input id="email" type="email" name="_replyto" class="u-full-width  form-input" >
                 <label for="body" class="form-label">Message</label>
@@ -95,6 +122,7 @@
 <footer class="l-footer">
     <div class="container">
         <p class="description">Built with ❤ in 2016</p>
+        <p class="description"><a href="es.html">Spanish Version</a></p>
     </div>
 </footer>
 
