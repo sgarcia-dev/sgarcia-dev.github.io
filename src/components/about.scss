@@ -1,4 +1,12 @@
 #l-about {
+	.profile-picture {
+		position: relative;
+		img {
+			width: 50%;
+			border-radius: 100%;
+			margin-bottom: 2em;
+		}
+	}
 	.skill {
 		position: relative;
 		font-size: 2rem;
@@ -28,5 +36,12 @@
 			background-color: $background-accent-color;
 			color: $background-color;
 		}
+	}
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	#l-about .profile-picture img {
+		width: 90%;
 	}
 }

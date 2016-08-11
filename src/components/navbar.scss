@@ -1,4 +1,4 @@
-$navbar-padding: 2em;
+$navbar-padding: 20px;
 .l-navbar {
 	position: absolute;
 	width: 100%;
@@ -25,33 +25,23 @@ $navbar-padding: 2em;
 	.navbar-link {
 		font-weight: bold;
 		transition: color 0.3s;
+		color: $foreground-accent-color;
 		&:hover {
+			color: $accent-color;
 		}
 	}
 }
 #logo {
 	display: inline-block;
-	height: 12rem;
-	width: 12rem;
-	font-size: 5rem;
+	height: 10rem;
+	width: 10rem;
 	line-height: 12rem;
-	background-color: $accent-color;
 	color: white;
 	text-align: center;
-	transition: color 0.5s, background-color 0.5s;
-	&:hover {
-		color: $background-color;
-		background-color: $foreground-color;
-	}
+	transform: scale(1);
 }
 
 @media (min-width: 400px) {
-	#logo {
-		height: 9rem;
-		width: 9rem;
-		font-size: 3.5rem;
-		line-height: 9rem;
-	}
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -60,8 +50,8 @@ $navbar-padding: 2em;
 	}
 
 	#logo {
-		height: 6rem;
-		width: 6rem;
+		height: 9rem;
+		width: 9rem;
 		font-size: 2rem;
 		line-height: 6rem;
 	}
