@@ -5,10 +5,9 @@ $background-color: #2B3A42;
 $background-accent-color: darken($background-color, 7%);
 $foreground-color: #759db2 ;
 $foreground-accent-color: #BDD4DE;
-
 $accent-color: #FF530D;
 
-$default-font-size: 2rem;
+$default-font-size: 2.3rem;
 
 html {
 	font-size: 8px;
@@ -18,7 +17,7 @@ body {
 	background-color: $background-color;
 }
 
-div, p, a, br, label {
+div, p, a, br, label, hr, input {
 	font-size: $default-font-size;
 	color: $foreground-color;
 }
@@ -39,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 
 hr {
 	border-top: 1px solid $background-accent-color;
-	border-bottom: 1px solid lighten($background-accent-color, 10%);
+	border-bottom: 1px solid lighten($background-accent-color, 20%);
 }
 
 label {
@@ -99,24 +98,20 @@ input[type=submit] {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-	.container {
-		&.wide {
-			width: 90%;
-			max-width: 1200px;
-		}
-	}
+
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
 	html {
-		font-size: 9px;
+		font-size: 10px;
 	}
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-	html {
-		font-size: 10px;
+	.container {
+		width: 80%;
+		max-width: 1200px;
 	}
 }

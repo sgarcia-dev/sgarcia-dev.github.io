@@ -19,11 +19,10 @@ $navbar-padding: 20px;
 		padding-right: $navbar-padding;
 		float: right;
 		> * {
-			margin-left: $navbar-padding / 2;
+			margin-left: $navbar-padding;
 		}
 	}
 	.navbar-link {
-		font-weight: bold;
 		transition: color 0.3s;
 		color: $foreground-accent-color;
 		&:hover {

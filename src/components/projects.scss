@@ -1,6 +1,12 @@
 #l-projects {
+	.project-thumbnail {
+		width: 90%;
+		border-radius: 100%;
+		margin: 30px 0;
+	}
+
 	.card {
-		cursor: pointer;
+		cursor: default;
 		height: 13em;
 		background-color: $background-accent-color;
 		color: $foreground-color;
@@ -20,6 +26,7 @@
 		.description {
 			p {
 				color: $background-accent-color;
+				font-size: 0.8em;
 			}
 		}
 		.card-footer {

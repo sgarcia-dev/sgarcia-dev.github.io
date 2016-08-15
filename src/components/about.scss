@@ -1,4 +1,7 @@
 #l-about {
+	ul > li, ol > li {
+		font-size: 0.85em;
+	}
 	.profile-picture {
 		position: relative;
 		img {
@@ -9,24 +12,26 @@
 	}
 	.skill {
 		position: relative;
-		font-size: 2rem;
-		height: 1.6em;
-		margin-bottom: 0.7em;
+		font-size: 1.3em;
+		height: 1em;
+		margin-bottom: 0.5em;
 		overflow: hidden;
 		.bar, .bar-label, .bar-placeholder {
 			position: absolute;
 			top: 0;
-			height: 1.6em;
-			font-size: 2rem;
-			line-height: 1.6em;
+			height: 1em;
+			font-size: 1em;
+			line-height: 1em;
 			width: 100%;
 		}
 		.bar-label {
 			z-index: 2;
 			color: $foreground-accent-color;
-			font-weight: bold;
 			vertical-align: middle;
-			padding-left: 0.3em;
+			padding-left: 0.5em;
+			font-size: 0.5em;
+			height: 2em;
+			line-height: 2em;
 		}
 		.bar {
 			z-index: 1;
