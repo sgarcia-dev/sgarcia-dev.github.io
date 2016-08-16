@@ -79,7 +79,7 @@ textarea {
 input[type=submit] {
 	text-align: left;
 	font-size: 3rem;
-	color: $foreground-accent-color;
+	color: $accent-color;
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
@@ -88,7 +88,7 @@ input[type=submit] {
 	font-weight: lighter;
 	transition: color 0.3s;
 	&:hover {
-		color: $accent-color;
+		color: $foreground-accent-color;
 	}
 }
 

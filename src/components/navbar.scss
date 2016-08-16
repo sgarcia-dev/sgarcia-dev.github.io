@@ -11,7 +11,7 @@ $navbar-padding: 20px;
 		padding-left: $navbar-padding;
 		float: left;
 		> * {
-			margin-right: $navbar-padding / 2;
+			margin-right: 1em;
 		}
 	}
 	.navbar-right {
@@ -19,7 +19,7 @@ $navbar-padding: 20px;
 		padding-right: $navbar-padding;
 		float: right;
 		> * {
-			margin-left: $navbar-padding;
+			margin-left: 1em;
 		}
 	}
 	.navbar-link {
@@ -30,28 +30,39 @@ $navbar-padding: 20px;
 		}
 	}
 }
+$logo-size: 70px;
 #logo {
 	display: inline-block;
-	height: 10rem;
-	width: 10rem;
-	line-height: 12rem;
-	color: white;
+	height: $logo-size;
+	width: $logo-size;
+	line-height: $logo-size;
+	font-size: $logo-size/3;
+	vertical-align: middle;
 	text-align: center;
-	transform: scale(1);
+	color: white;
+	letter-spacing: 0.1em;
+	background-color: $accent-color;
+	transition: background-color 0.3s;
+	&:hover {
+		background-color: $foreground-accent-color;
+	}
 }
 
 @media (min-width: 400px) {
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-	.l-navbar .navbar-right {
-		display: block;
+	$navbar-padding: 40px;
+	.l-navbar {
+		.navbar-right {
+			padding-top: $navbar-padding;
+			padding-right: $navbar-padding;
+			display: block;
+		}
+		.navbar-left {
+			padding-top: $navbar-padding;
+			padding-left: $navbar-padding;
+		}
 	}
 
-	#logo {
-		height: 9rem;
-		width: 9rem;
-		font-size: 2rem;
-		line-height: 6rem;
-	}
 }
