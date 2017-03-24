@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sgarcia-dev/sgarcia-dev.github.io#readme",
   "devDependencies": {
+    "angular": "1.6.3",
     "browserify": "^13.1.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
