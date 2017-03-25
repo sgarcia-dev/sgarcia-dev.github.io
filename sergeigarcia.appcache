@@ -1,11 +1,11 @@
 CACHE MANIFEST
-# 1.0.2
+# 1.0.3
 
 # Explicitly cached master entries
 CACHE:
 index.html
-dist/index.js
-dist/index.css
+dist/bundle.min.js
+dist/bundle.min.css
 
 # Resources that require users to be online
 NETWORK:
