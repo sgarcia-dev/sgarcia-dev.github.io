@@ -3,7 +3,13 @@
 	"description": "Web Developer, Aspiring Designer, Tech Enthusiast & Blogger.",
 	"short_name": "Sergei's Profile",
 	"icons": [
+		{
+			"src": "dist/images/favicon/apple-touch-icon.png",
+			"sizes": "120x120",
+			"type": "image/png"
+		}
 	],
+	"background_color": "#2B3A42",
 	"theme_color": "#FF530D",
 	"display": "standalone"
 }

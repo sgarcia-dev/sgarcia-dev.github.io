@@ -70,8 +70,8 @@ function createHtmlTask(opts) {
 
 	return () => {
 		//uncomment for debugging purposes
+		//gpUtil.log(`Processing Task: ${JSON.stringify(opts)}`);
 		const injectFiles = gulp.src(opts.inject, {read: false});
-		gpUtil.log(`Processing Task: ${JSON.stringify(opts)}`);
 		return gulp.src(opts.src)
 			.pipe(gpInject(injectFiles, {addRootSlash: false}))
 			.pipe(gpIf(!opts.debug,
