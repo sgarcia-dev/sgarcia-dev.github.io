@@ -11,7 +11,8 @@ const gpRunSequence = require('run-sequence'),
 	gpHtmlMin = require('gulp-htmlmin'),
 	gpInject = require('gulp-inject'),
 	gpIf = require('gulp-if'),
-	gpUtil = require('gulp-util');
+	gpUtil = require('gulp-util'),
+	gpConnect = require('gulp-connect');
 
 
 // task definitions
@@ -78,16 +79,18 @@ function createHtmlTask(opts) {
 				gpHtmlMin({
 					collapseBooleanAttributes: true,
 					collapseWhitespace: true,
-					removeAttributeQuotes: true,
 					removeComments: true, // Only if you don't use comment directives!
 					removeEmptyAttributes: true,
 					removeRedundantAttributes: true,
 					removeScriptTypeAttributes: true,
 					removeStyleLinkTypeAttributes: true,
-					keepClosingSlash: true
+					keepClosingSlash: true,
+					minifyJS: true,
+					minifyCSS: true
 				})
 			)).pipe(gpIf(opts.flatten,
 			gpFlatten()
-		)).pipe(gulp.dest(opts.dist));
+		)).pipe(gulp.dest(opts.dist))
+		.pipe(gpConnect.reload());
 	};
 }

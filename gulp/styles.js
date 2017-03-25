@@ -7,11 +7,13 @@ const path = require('path'),
 
 // gulp plugins
 const gpRunSequence = require('run-sequence'),
+	gpIf = require('gulp-if'),
 	gpRename = require('gulp-rename'),
 	gpSass = require('gulp-sass'),
 	gpPostCSS = require('gulp-postcss'),
 	gpSourceMaps = require('gulp-sourcemaps'),
-	gpUtil = require('gulp-util');
+	gpUtil = require('gulp-util'),
+	gpConnect = require('gulp-connect');
 
 // task definitions
 gulp.task('process-css', done => {
@@ -55,7 +57,8 @@ function createSassTask(opts) {
 			.pipe(gpSass().on('error', gpSass.logError))
 			.pipe(gpSourceMaps.write())
 			.pipe(gpRename(opts.filename))
-			.pipe(gulp.dest(opts.dist));
+			.pipe(gulp.dest(opts.dist))
+			.pipe(gpConnect.reload());
 	} else {
 		task = () => gulp.src(opts.src)
 			.pipe(gpSass().on('error', gpSass.logError))
@@ -75,7 +78,8 @@ function createSassTask(opts) {
 				})
 			]))
 			.pipe(gpRename(opts.filename))
-			.pipe(gulp.dest(opts.dist));
+			.pipe(gulp.dest(opts.dist))
+			.pipe(gpConnect.reload());
 	}
 	return task;
 }

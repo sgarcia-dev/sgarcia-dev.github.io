@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 1.0.3
+# 1.0.4
 
 # Explicitly cached master entries
 CACHE:
@@ -10,3 +10,7 @@ dist/bundle.min.css
 # Resources that require users to be online
 NETWORK:
 *
+
+FALLBACK
+dist/bundle.min.js dist/bundle.js
+dist/bundle.min.css dist/bundle.css

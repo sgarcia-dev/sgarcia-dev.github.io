@@ -2,7 +2,8 @@ const gulp = require('gulp');
 
 const gpSize = require('gulp-size'),
 	gpRunSequence = require('run-sequence'),
-	gpUtil = require('gulp-util');
+	gpUtil = require('gulp-util'),
+	gpConnect = require('gulp-connect');
 
 const del = require('del');
 
@@ -43,7 +44,7 @@ gulp.task('build', [], (done) => {
 });
 
 gulp.task('dev', [], (done) => {
-	gpRunSequence('clean', 'dev-build-project', 'watch', () => {
+	gpRunSequence('clean', 'dev-build-project', 'watch', 'serve', () => {
 		done();
 	});
 });
@@ -52,6 +53,13 @@ gulp.task('watch', function () {
     gulp.watch('src/**/*.html', ['process-html-debug']);
     gulp.watch('src/**/*.scss', ['process-css-and-html-debug']);
     gulp.watch('src/**/*.js', ['process-js-and-html-debug']);
+});
+
+gulp.task('serve', () => {
+	gpConnect.server({
+		port: 8080,
+		livereload: true
+	});
 });
 
 gulp.task('default', ['dev']);

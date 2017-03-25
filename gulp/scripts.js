@@ -6,14 +6,15 @@ const path = require('path'),
 	vinylSourceStream = require('vinyl-source-stream'),
 	vinylBuffer = require('vinyl-buffer'),
 	browserify = require('browserify'),
-	babelify = require('babelify'),
-	gpUtil = require('gulp-util');
+	babelify = require('babelify');
 
 // gulp plugins
 const gpRunSequence = require('run-sequence'),
 	gpRename = require('gulp-rename'),
 	gpUglify = require('gulp-uglify'),
-	gpInsert = require('gulp-insert');
+	gpInsert = require('gulp-insert'),
+	gpUtil = require('gulp-util'),
+	gpConnect = require('gulp-connect');
 
 // dask definitions
 gulp.task('process-js', callback => {
@@ -70,7 +71,8 @@ function createJsTask(opts) {
 			.pipe(vinylSourceStream('index.js'))
 			.pipe(vinylBuffer())
 			.pipe(gpRename(opts.filename))
-			.pipe(gulp.dest(opts.dest));
+			.pipe(gulp.dest(opts.dest))
+			.pipe(gpConnect.reload());
 	} else {
 		task = () => browserify(opts.src, {
 			cache: {},
@@ -87,7 +89,8 @@ function createJsTask(opts) {
 			.pipe(gpUglify({ mangle: false }))
 			.pipe(gpRename(opts.filename))
 			.pipe(gpInsert.append(`console.info('BUILD DATE: ${new Date().toGMTString()}');`))
-			.pipe(gulp.dest(opts.dest));
+			.pipe(gulp.dest(opts.dest))
+			.pipe(gpConnect.reload());
 	}
 	return task;
 }
