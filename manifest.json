@@ -5,5 +5,5 @@
 	"icons": [
 	],
 	"theme_color": "#FF530D",
-	"display": "minimal-ui"
+	"display": "standalone"
 }
