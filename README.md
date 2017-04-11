@@ -4,6 +4,10 @@
 1. Run `yarn install` (or `npm install` if you are still using NPM).
 2. Run `npm start`.
 
+### NPM scripts
+* `start`
+* `build`
+
 ### ToDo List
 * Add unit tests with Mocha or Tape
 * Add webpack bundler support.
