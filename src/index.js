@@ -1,16 +1,14 @@
-require('./config/config');
+import angular from 'angular';
 
-var reveal = require('./common/reveal');
+import {hello} from './app/hello';
+import 'angular-ui-router';
+import routesConfig from './routes';
 
-reveal.init({
-	offset: 0.1
-});
+import './index.scss';
 
-document.querySelector('body').addEventListener('click', e => {
-	dataLayer.push({
-		'event': 'page_click',
-		'target_el_id': e.target.id,
-		'target_el_class': e.target.className
-	});
-	console.info('data-layer event triggered.');
-});
+export const app = 'app';
+
+angular
+  .module(app, ['ui.router'])
+  .config(routesConfig)
+  .component('app', hello);

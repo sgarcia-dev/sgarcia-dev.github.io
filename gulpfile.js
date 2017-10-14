@@ -1,65 +1,29 @@
 const gulp = require('gulp');
+const HubRegistry = require('gulp-hub');
+const browserSync = require('browser-sync');
 
-const gpSize = require('gulp-size'),
-	gpRunSequence = require('run-sequence'),
-	gpUtil = require('gulp-util'),
-	gpConnect = require('gulp-connect');
+const conf = require('./conf/gulp.conf');
 
-const del = require('del');
+// Load some files into the registry
+const hub = new HubRegistry([conf.path.tasks('*.js')]);
 
-require('./gulp/scripts');
-require('./gulp/styles');
-require('./gulp/html');
-require('./gulp/images');
+// Tell gulp to use the tasks just loaded
+gulp.registry(hub);
 
-gulp.task('clean', del.bind(null, ['dist']));
+gulp.task('build', gulp.series(gulp.parallel('other', 'webpack:dist')));
+gulp.task('test', gulp.series('karma:single-run'));
+gulp.task('test:auto', gulp.series('karma:auto-run'));
+gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
+gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
+gulp.task('default', gulp.series('clean', 'build'));
+gulp.task('watch', watch);
 
-gulp.task('build-project', [], done => {
-	gpRunSequence([
-		'process-css',
-		'process-js',
-		'process-images'
-	], 'process-html', () => {
-		gpUtil.log(gpUtil.colors.bgGreen('Build completed.'));
-		done();
-	});
-});
+function reloadBrowserSync(cb) {
+  browserSync.reload();
+  cb();
+}
 
-
-gulp.task('dev-build-project', done => {
-	gpRunSequence([
-		'process-css-debug',
-		'process-js-debug',
-		'process-images'
-	], 'process-html-debug', () => {
-		gpUtil.log(gpUtil.colors.bgGreen('Dev build completed.'));
-		done();
-	});
-});
-
-gulp.task('build', [], (done) => {
-	gpRunSequence('clean', 'build-project', () => {
-		done();
-	});
-});
-
-gulp.task('dev', [], (done) => {
-	gpRunSequence('clean', 'dev-build-project', 'watch', 'serve', () => {
-		done();
-	});
-});
-
-gulp.task('watch', function () {
-    gulp.watch('src/**/*.html', ['process-html-debug']);
-    gulp.watch('src/**/*.scss', ['process-css-and-html-debug']);
-    gulp.watch('src/**/*.js', ['process-js-and-html-debug']);
-});
-
-gulp.task('serve', () => {
-	gpConnect.server({
-		port: 8080,
-		livereload: true
-	});
-});
-
-gulp.task('default', ['dev']);
+function watch(done) {
+  gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
+  done();
+}

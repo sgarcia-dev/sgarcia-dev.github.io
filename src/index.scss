@@ -1,28 +1,3 @@
-@import "config/lib/normalize";
-@import "config/lib/skeleton";
-
-@import "config/config";
-@import "common/utility";
-@import "common/reveal";
-@import "common/scroll";
-@import "components/navbar";
-@import "components/content-block";
-@import "components/landing";
-@import "components/about";
-@import "components/projects";
-@import "components/footer";
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+body {
+  background-color: lightgrey;
+}
