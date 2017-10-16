@@ -19,11 +19,11 @@ gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 
 function reloadBrowserSync(cb) {
-  browserSync.reload();
-  cb();
+    browserSync.reload();
+    cb();
 }
 
 function watch(done) {
-  gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
-  done();
+    gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
+    done();
 }
