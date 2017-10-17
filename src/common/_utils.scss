@@ -1,0 +1,17 @@
+.has-subtitle {
+    margin-bottom: 0;
+}
+
+.has-child-centered {
+    position: relative;
+    & > * {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.fill-vertically {
+    height: 100%;
+}

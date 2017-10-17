@@ -1,0 +1,21 @@
+.jumbotron {
+    height: 95vh;
+    .title-container {
+        transform-origin: 75%;
+        transform: skewY(9deg);
+    }
+    h1 {
+        font-size: 9rem;
+        display: inline-block;
+        position: relative;
+    }
+}
+
+section {
+    &.large {
+        text-align: center;
+        p {
+            font-size: 5rem;
+        }
+    }
+}

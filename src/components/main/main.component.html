@@ -1,20 +1,40 @@
-<div class="container">
-        <div class="row">
-            <div class="twelve columns">
-                    <h1 ng-bind="mainCtrl.profile.fullName"></h1>
-                    <h5 ng-bind="mainCtrl.profile.headline"></h5>
-                    <p ng-bind="mainCtrl.profile.aboutMe"></p>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="twelve columns">
-                <h1>Work Experience</h1>
-            </div>
-            <div class="twelve columns" ng-repeat="position in mainCtrl.positions">
-                <h5 ng-bind="position.title"></h5>
-                <h6 ng-bind="position.company"></h6>
-                <pre ng-bind="position.description"></pre>
-            </div>
-        </div>
+<div class="jumbotron has-child-centered">
+    <div class="container title-container slide-in-parent">
+        <h1 class="wow slide-in" data-wow-delay="0.5s">Sergei Garcia</h1>
     </div>
+</div>
+<div class="container">
+    <section class="large wow fade-in">
+        <h2>About Me</h2>
+        <p ng-bind="mainCtrl.profile.aboutMe"></p>
+    </section>
+    <section>
+        <h2 class="section-title">Work Experience</h2>
+        <div ng-repeat="position in mainCtrl.positions">
+            <h5 ng-bind="position.title" class="has-subtitle"></h5>
+            <h6 ng-bind="position.company"></h6>
+            <pre ng-bind="position.description"></pre>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li ng-repeat="skill in mainCtrl.skills" ng-bind="skill"></li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="section-title">Certifications</h2>
+        <div ng-repeat="certification in mainCtrl.certifications">
+            <h6 ng-bind="certification.name" class="has-subtitle"></h6>
+            <p>{{certification.authority}} - {{certification.date.toLocaleDateString()}}</p>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-title">Recommendations</h2>
+        <div ng-repeat="recommendation in mainCtrl.recommendations | orderBy: 'date'">
+            <h5 ng-bind="recommendation.fullName" class="has-subtitle"></h5>
+            <h6>{{recommendation.jobTitle}} - {{recommendation.company}} - {{recommendation.date.toLocaleDateString()}}</h6>
+            <blockquote ng-bind="recommendation.content"></blockquote>
+        </div>
+    </section>
+</div>

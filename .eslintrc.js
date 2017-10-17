@@ -10,6 +10,7 @@ module.exports = {
     'eol-last': 0,
     'indent': ['warn', 4],
     'angular/log': 0,
-    'angular/no-service-method': 0
+    'angular/no-service-method': 0,
+    'angular/window-service': 0
   }
 }

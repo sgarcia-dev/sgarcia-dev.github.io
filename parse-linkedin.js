@@ -4,6 +4,7 @@ const csvParse = require('csv-parse');
 const CSV_OUTPUT_PATH = './assets/json/profile.json';
 const CSV_ROOT_PATH = './assets/csv'
 const CSV_PATHS = {
+    certifications: `${CSV_ROOT_PATH}/Certifications.csv`,
     causesYouCareAbout: `${CSV_ROOT_PATH}/Causes You Care About.csv`,
     // connections: `${CSV_ROOT_PATH}/Connections.csv`,
     courses: `${CSV_ROOT_PATH}/Courses.csv`,

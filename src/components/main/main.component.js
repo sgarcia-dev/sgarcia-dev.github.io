@@ -1,9 +1,17 @@
 class mainController {
-    constructor(profileService) {
+    constructor(profileService, wowService) {
         this.profileService = profileService;
+        this.wowService = wowService;
 
         this.profile = profileService.profile;
         this.positions = profileService.positions;
+        this.skills = profileService.skills;
+        this.certifications = profileService.certifications;
+        this.recommendations = profileService.recommendations;
+    }
+
+    $postLink() {
+        this.wowService.sync();
     }
 }
 

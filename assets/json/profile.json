@@ -1,1 +1,251 @@
-{"causesYouCareAbout":[{"Supported Cause":"Arts and Culture"},{"Supported Cause":"Environment"},{"Supported Cause":"Human Rights"},{"Supported Cause":"Disaster and Humanitarian Relief"},{"Supported Cause":"Poverty Alleviation"},{"Supported Cause":"Science and Technology"}],"emailAddresses":[{"Email Address":"sgarcia.dev@gmail.com","Confirmed":"Yes","Primary":"Yes","Updated On":"11/5/13, 9:41 AM"}],"courses":[{"Name":"Front End Development with HTML5/Javascript/CSS3","Number":""},{"Name":"Java Enterprise for back end framework Academy","Number":""}],"education":[{"School Name":"Universidad Tecmilenio","Start Date":"2010","End Date":"2013","Notes":"","Degree Name":"Bachelor's degree","Activities":""}],"honors":[{"Title":"Graduated with Honors","Description":"","Issuer":"Universidad TecMilenio","Issue Date":"Dec 2013"}],"languages":[{"Name":"English","Proficiency":"Native or bilingual proficiency"},{"Name":"Spanish","Proficiency":"Native or bilingual proficiency"}],"positions":[{"Company Name":"Tiempo Development","Title":"Sr. Front-End Engineer","Description":" - Actively developed new UI components for a CRM application for a client in the Telecom Industry using AngularJS Components and Redux using Agile and TDD methodologies.","Location":"Monterrey Area, Mexico","Started On":"Jun 2017","Finished On":""},{"Company Name":"Desafío Latam","Title":"Front-End Bootcamp Instructor","Description":"Acted as instructor/presenter in the Front End part of the Full Stack Web Developer Bootcamp made by Desafio Latam on Saturdays. Tasks include covering the entire course syllabus using material provided by Desafio Latam, supporting students, and custom tailoring the course content to student needs.","Location":"Monterrey Area, Mexico","Started On":"Feb 2017","Finished On":"Jul 2017"},{"Company Name":"Inflection Point Systems","Title":"Sr. Front End Developer","Description":"- Performed regular maintenance of the company website. Tasks included bugfixes and creation of new Sitecore ready components. Preformed enhancements to the website’s functionality that improved scrolling performance by over 25%, tweaked the Task Runners configuration for better code management, and further improved the project structure organization to reduce time needed to search for files.\n\n- Actively maintained and developed new components for an educational platform built on Salesforce and AngularJS. Tasks included bugfixes on broken functionality, as well as preforming several code improvements to code maintainability, as well as integrating a JavaScript bundler that allowed the separation of business logic from application logic (migrating the application from a monolithic, to micro service approach in the process) which reduced testing time by over 80%, as well as facilitation code migration for when it’s needed sometime in the future.\n","Location":"Monterrey Area, Mexico","Started On":"Apr 2016","Finished On":"Jun 2017"},{"Company Name":"Accenture","Title":"Front End Developer","Description":"- Developed a farm automation and management iPad application for a Forbes 500 company in the agriculture sector. This application eliminated the need for constant micromanagement of individual farms and added precision agriculture intelligence which helped maximize profits and decrease losses. It was developed as a hybrid HTML5 application using Ionic/Cordova (to facilitate portability to android sometime in the future), AngularJS, Couchbase, and ArcGis. Responsibilities included coding the application’s front end, testing, setting up continuous integration, and proposing solutions to technological and performance barriers for the client’s needs.\n\n- Developed a responsive website and individual, reusable components for an US company in the health sector. The main objectives of this were to create reusable site components which are maintainable, modernizing the site’s design, and making it’s design adapt to a wide variety of browsers, display sizes and devices. It was developed with Bootstrap, jQuery, and Modernizr. Responsibilities included coding components and setting up continuous integration. \n\n- Developed a demo iOS application for a hospital. To be used as a tool for selling the application to the client, the app was to be used as a secure way of communicating hospital employees and patients. It was developed in Xamarin Forms as a multi-platform native application which could be ported to android effortlessly. Responsibilities included creating the app demo within a 4 week timespan.","Location":"Monterrey, Nuevo Leon, Mexico","Started On":"Aug 2014","Finished On":"Apr 2016"},{"Company Name":"ZENTIUS","Title":".NET Software Developer","Description":"Developed a visitor management application for a local company partially. It’s primary purpose was to automate visitor registration by extracting data from personal ID’s using an OCR, and then saving it to a local database. It was developed using C#, Windows Forms, and Entity Framework. Responsibilities included creating the application and it’s windows installer.","Location":"","Started On":"Mar 2014","Finished On":"Aug 2014"},{"Company Name":"NIC Mexico","Title":"Trainee in Information Systems Development","Description":"* Helped with Spanish to English translation related tasks while taking part in Java training.","Location":"Av. Eugenio Garza Sada 427 Col. Altavista L4-6, Monterrey, Mexico, CP 64840","Started On":"May 2013","Finished On":"Nov 2013"}],"phoneNumbers":[{"Extension":"","Number":"8120010247","Type":"Mobile"}],"profile":[{"First Name":"Sergei Edoardo","Last Name":"Garcia Ortega","Maiden Name":"","Address":"","Birth Date":"Jul 4, 1993","Contact Instructions":"","Marital Status":"Single","Headline":"Sr. Front-End Engineer at Tiempo Development","Summary":"Hi there, I'm Sergei Garcia, and I’m a Front-End Engineer who loves to write high performance, clean, maintainable code for web apps. My hobbies include reading blogs to keep up to the latest trends in coding technologies and tech gadgets, taking courses about new Front End tool that help me stay ahead of the curve, as well as working on my next blog entry on Medium. I like to dabble in back end technologies like Node.js & PHP, because my next goal is to transition into a Full-Stack Developer. ","Industry":"Computer Software"}],"publications":[{"Name":"My journey to becoming a web developer from scratch without a CS degree (and what I learned from it)","Publication Date":"Aug 17, 2016","Description":"In this +6,000 word article, I outline what my journey was like while becoming a fully fledged web developer from scratch, 2 years later. The article reached monthly Top status, +130,000 views and +2,700 recommends on the Medium community.","Publisher":"FreeCodeCamp, Medium","URL":"https://medium.freecodecamp.com/my-journey-to-becoming-a-web-developer-from-scratch-without-a-cs-degree-2-years-later-and-what-i-4a7fd2ff5503#.gq4uf8p18"}],"skills":[{"Name":"JavaScript"},{"Name":"React.js"},{"Name":"AngularJS"},{"Name":"HTML5"},{"Name":"CSS"},{"Name":"NodeJS"},{"Name":"Responsive Web Design"},{"Name":"Website Performance Optimization"},{"Name":"C#"},{"Name":"Linux"},{"Name":"Ionic Framework"},{"Name":"Gulp"},{"Name":"Xamarin.Forms"},{"Name":"jQuery"},{"Name":"Java EE"},{"Name":"Microsoft SQL Server"},{"Name":"GruntJS"},{"Name":"Entity Framework"},{"Name":"Business English"},{"Name":"BackboneJS"},{"Name":"Redux"}],"recommendationsGiven":[{"First Name":"Marco Antonio","Last Name":"Dominguez Rueda","Company":"EPAM Systems","Job Title":"Senior Software Engineer","Text":"Marco is a superb leader who is excellent at pulling teams together. He was strongly knowledgeable for his position, constantly reading and keeping track of the cutting edge technology in front end. Not only this, but he shared this knowledge with his peers everytime he could, and functioned as a great teacher to many people (myself included), constantly motivating us to push for the extra mile.\r\n\r\nI highly recommend Marco Antonio Dominguez Rueda for any kind of web development job where strong leadership and teamwork skills are required.","Creation Date":"5/5/16, 8:08 AM","Status":""},{"First Name":"Jose Carlos Ixcoatl","Last Name":"Gomez Briones","Company":"Unosquare","Job Title":"Senior Frontend Developer","Text":"Jose Carlos was an excellent mentor and team lead which I would absolutely love to have again as my team leader. He prioritized growth as a team over pursuing his own goals, and taught by example. His leadership helped deliver our project in time for the deadline, despite the high amount of changes made in the last second. ","Creation Date":"4/19/16, 12:33 PM","Status":""}],"recommendationsReceived":[{"First Name":"Arturo","Last Name":"Pruneda","Company":"Accenture","Job Title":"Application Development Associate Manager","Text":"Sergei is an excellent developer. I worked with him for about six months, and this was enough to know how skilled he is, and how passionate is about the work he does. He is also a great team player, always willing to share his knowledge and to help others to complete their tasks. I'm sure he will add great value on any project he works on.","Creation Date":"6/1/16, 1:14 PM","Status":"VISIBLE"},{"First Name":"Raul","Last Name":"Salazar","Company":"ONIBEX","Job Title":"UX Consultant","Text":"Sergei es uno de los mejores Front End Developers con los que he colaborado, es una persona con iniciativa, creativa y meticulosa que propone soluciones y se mantiene actualizado con el día a día en tecnología y desarrollo.\r\n\r\nEspero volver a trabajar con el.","Creation Date":"3/21/17, 9:34 AM","Status":"VISIBLE"},{"First Name":"Marco Antonio","Last Name":"Dominguez Rueda","Company":"EPAM Systems","Job Title":"Senior Software Engineer","Text":"Sergei is a developer who has strong skills on different technologies and is focused to improve constantly, reading about best practices and performance, keeping track the latest technologies, working side by side with his team mates to share his knowledge, asking constantly for feedback.\r\n\r\nI highly recommend Sergei for any kind of web development, he is an excellent developer and teammate.  ","Creation Date":"5/10/16, 6:33 AM","Status":"VISIBLE"}]}
+{
+    "certifications": [{
+        "Name": "IT Project Management",
+        "Url": "",
+        "Authority": "EC-Council",
+        "Start Date": "Dec 2013",
+        "End Date": "",
+        "License Number": ""
+    }, {
+        "Name": "TOEIC English Certification: Score 950 out of 990",
+        "Url": "",
+        "Authority": "Educational Testing Service (ETS)",
+        "Start Date": "May 2013",
+        "End Date": "",
+        "License Number": "224300"
+    }, {
+        "Name": "Microsoft Office Specialist in Access 2007",
+        "Url": "http://verify.certiport.com",
+        "Authority": "Microsoft",
+        "Start Date": "Mar 2012",
+        "End Date": "",
+        "License Number": "wBA8-kqS2"
+    }, {
+        "Name": "Six Sigma Yellow Belt - Quality Improvement Certification",
+        "Url": "",
+        "Authority": "Lean Sigma Professionals",
+        "Start Date": "Dec 2013",
+        "End Date": "",
+        "License Number": ""
+    }, {
+        "Name": "Managerial Abilities Certification e-LEADERSHIP PLUS",
+        "Url": "",
+        "Authority": "CDG",
+        "Start Date": "May 2012",
+        "End Date": "",
+        "License Number": "CLE010810-C62-0013"
+    }, {
+        "Name": "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3",
+        "Url": "https://mcp.microsoft.com/Anonymous//Transcript/Validate",
+        "Authority": "Microsoft",
+        "Start Date": "Mar 2017",
+        "End Date": "",
+        "License Number": "Transcript ID: 1205172, Access Code: sergeigarcia"
+    }, {
+        "Name": "Microsoft Certified Professional",
+        "Url": "https://mcp.microsoft.com/Anonymous//Transcript/Validate",
+        "Authority": "Microsoft",
+        "Start Date": "Mar 2017",
+        "End Date": "",
+        "License Number": "Transcript ID: 1205172, Access Code: sergeigarcia"
+    }],
+    "causesYouCareAbout": [{
+        "Supported Cause": "Arts and Culture"
+    }, {
+        "Supported Cause": "Environment"
+    }, {
+        "Supported Cause": "Human Rights"
+    }, {
+        "Supported Cause": "Disaster and Humanitarian Relief"
+    }, {
+        "Supported Cause": "Poverty Alleviation"
+    }, {
+        "Supported Cause": "Science and Technology"
+    }],
+    "courses": [{
+        "Name": "Front End Development with HTML5/Javascript/CSS3",
+        "Number": ""
+    }, {
+        "Name": "Java Enterprise for back end framework Academy",
+        "Number": ""
+    }],
+    "emailAddresses": [{
+        "Email Address": "sgarcia.dev@gmail.com",
+        "Confirmed": "Yes",
+        "Primary": "Yes",
+        "Updated On": "11/5/13, 9:41 AM"
+    }],
+    "education": [{
+        "School Name": "Universidad Tecmilenio",
+        "Start Date": "2010",
+        "End Date": "2013",
+        "Notes": "",
+        "Degree Name": "Bachelor's degree",
+        "Activities": ""
+    }],
+    "honors": [{
+        "Title": "Graduated with Honors",
+        "Description": "",
+        "Issuer": "Universidad TecMilenio",
+        "Issue Date": "Dec 2013"
+    }],
+    "languages": [{
+        "Name": "English",
+        "Proficiency": "Native or bilingual proficiency"
+    }, {
+        "Name": "Spanish",
+        "Proficiency": "Native or bilingual proficiency"
+    }],
+    "positions": [{
+        "Company Name": "Tiempo Development",
+        "Title": "Sr. Front-End Engineer",
+        "Description": " - Actively developed new UI components for a CRM application for a client in the Telecom Industry using AngularJS Components and Redux using Agile and TDD methodologies.",
+        "Location": "Monterrey Area, Mexico",
+        "Started On": "Jun 2017",
+        "Finished On": ""
+    }, {
+        "Company Name": "Desafío Latam",
+        "Title": "Front-End Bootcamp Instructor",
+        "Description": "Acted as instructor/presenter in the Front End part of the Full Stack Web Developer Bootcamp made by Desafio Latam on Saturdays. Tasks include covering the entire course syllabus using material provided by Desafio Latam, supporting students, and custom tailoring the course content to student needs.",
+        "Location": "Monterrey Area, Mexico",
+        "Started On": "Feb 2017",
+        "Finished On": "Jul 2017"
+    }, {
+        "Company Name": "Inflection Point Systems",
+        "Title": "Sr. Front End Developer",
+        "Description": "- Performed regular maintenance of the company website. Tasks included bugfixes and creation of new Sitecore ready components. Preformed enhancements to the website’s functionality that improved scrolling performance by over 25%, tweaked the Task Runners configuration for better code management, and further improved the project structure organization to reduce time needed to search for files.\n\n- Actively maintained and developed new components for an educational platform built on Salesforce and AngularJS. Tasks included bugfixes on broken functionality, as well as preforming several code improvements to code maintainability, as well as integrating a JavaScript bundler that allowed the separation of business logic from application logic (migrating the application from a monolithic, to micro service approach in the process) which reduced testing time by over 80%, as well as facilitation code migration for when it’s needed sometime in the future.\n",
+        "Location": "Monterrey Area, Mexico",
+        "Started On": "Apr 2016",
+        "Finished On": "Jun 2017"
+    }, {
+        "Company Name": "Accenture",
+        "Title": "Front End Developer",
+        "Description": "- Developed a farm automation and management iPad application for a Forbes 500 company in the agriculture sector. This application eliminated the need for constant micromanagement of individual farms and added precision agriculture intelligence which helped maximize profits and decrease losses. It was developed as a hybrid HTML5 application using Ionic/Cordova (to facilitate portability to android sometime in the future), AngularJS, Couchbase, and ArcGis. Responsibilities included coding the application’s front end, testing, setting up continuous integration, and proposing solutions to technological and performance barriers for the client’s needs.\n\n- Developed a responsive website and individual, reusable components for an US company in the health sector. The main objectives of this were to create reusable site components which are maintainable, modernizing the site’s design, and making it’s design adapt to a wide variety of browsers, display sizes and devices. It was developed with Bootstrap, jQuery, and Modernizr. Responsibilities included coding components and setting up continuous integration. \n\n- Developed a demo iOS application for a hospital. To be used as a tool for selling the application to the client, the app was to be used as a secure way of communicating hospital employees and patients. It was developed in Xamarin Forms as a multi-platform native application which could be ported to android effortlessly. Responsibilities included creating the app demo within a 4 week timespan.",
+        "Location": "Monterrey, Nuevo Leon, Mexico",
+        "Started On": "Aug 2014",
+        "Finished On": "Apr 2016"
+    }, {
+        "Company Name": "ZENTIUS",
+        "Title": ".NET Software Developer",
+        "Description": "Developed a visitor management application for a local company partially. It’s primary purpose was to automate visitor registration by extracting data from personal ID’s using an OCR, and then saving it to a local database. It was developed using C#, Windows Forms, and Entity Framework. Responsibilities included creating the application and it’s windows installer.",
+        "Location": "",
+        "Started On": "Mar 2014",
+        "Finished On": "Aug 2014"
+    }, {
+        "Company Name": "NIC Mexico",
+        "Title": "Trainee in Information Systems Development",
+        "Description": "* Helped with Spanish to English translation related tasks while taking part in Java training.",
+        "Location": "Av. Eugenio Garza Sada 427 Col. Altavista L4-6, Monterrey, Mexico, CP 64840",
+        "Started On": "May 2013",
+        "Finished On": "Nov 2013"
+    }],
+    "phoneNumbers": [{
+        "Extension": "",
+        "Number": "8120010247",
+        "Type": "Mobile"
+    }],
+    "profile": [{
+        "First Name": "Sergei Edoardo",
+        "Last Name": "Garcia Ortega",
+        "Maiden Name": "",
+        "Address": "",
+        "Birth Date": "Jul 4, 1993",
+        "Contact Instructions": "",
+        "Marital Status": "Single",
+        "Headline": "Sr. Front-End Engineer at Tiempo Development",
+        "Summary": "Hi there, I'm Sergei Garcia, and I’m a Front-End Engineer who loves to write high performance, clean, maintainable code for web apps. My hobbies include reading blogs to keep up to the latest trends in coding technologies and tech gadgets, taking courses about new Front End tool that help me stay ahead of the curve, as well as working on my next blog entry on Medium. I like to dabble in back end technologies like Node.js & PHP, because my next goal is to transition into a Full-Stack Developer. ",
+        "Industry": "Computer Software"
+    }],
+    "recommendationsGiven": [{
+        "First Name": "Marco Antonio",
+        "Last Name": "Dominguez Rueda",
+        "Company": "EPAM Systems",
+        "Job Title": "Senior Software Engineer",
+        "Text": "Marco is a superb leader who is excellent at pulling teams together. He was strongly knowledgeable for his position, constantly reading and keeping track of the cutting edge technology in front end. Not only this, but he shared this knowledge with his peers everytime he could, and functioned as a great teacher to many people (myself included), constantly motivating us to push for the extra mile.\r\n\r\nI highly recommend Marco Antonio Dominguez Rueda for any kind of web development job where strong leadership and teamwork skills are required.",
+        "Creation Date": "5/5/16, 8:08 AM",
+        "Status": ""
+    }, {
+        "First Name": "Jose Carlos Ixcoatl",
+        "Last Name": "Gomez Briones",
+        "Company": "Unosquare",
+        "Job Title": "Senior Frontend Developer",
+        "Text": "Jose Carlos was an excellent mentor and team lead which I would absolutely love to have again as my team leader. He prioritized growth as a team over pursuing his own goals, and taught by example. His leadership helped deliver our project in time for the deadline, despite the high amount of changes made in the last second. ",
+        "Creation Date": "4/19/16, 12:33 PM",
+        "Status": ""
+    }],
+    "publications": [{
+        "Name": "My journey to becoming a web developer from scratch without a CS degree (and what I learned from it)",
+        "Publication Date": "Aug 17, 2016",
+        "Description": "In this +6,000 word article, I outline what my journey was like while becoming a fully fledged web developer from scratch, 2 years later. The article reached monthly Top status, +130,000 views and +2,700 recommends on the Medium community.",
+        "Publisher": "FreeCodeCamp, Medium",
+        "URL": "https://medium.freecodecamp.com/my-journey-to-becoming-a-web-developer-from-scratch-without-a-cs-degree-2-years-later-and-what-i-4a7fd2ff5503#.gq4uf8p18"
+    }],
+    "recommendationsReceived": [{
+        "First Name": "Arturo",
+        "Last Name": "Pruneda",
+        "Company": "Accenture",
+        "Job Title": "Application Development Associate Manager",
+        "Text": "Sergei is an excellent developer. I worked with him for about six months, and this was enough to know how skilled he is, and how passionate is about the work he does. He is also a great team player, always willing to share his knowledge and to help others to complete their tasks. I'm sure he will add great value on any project he works on.",
+        "Creation Date": "6/1/16, 1:14 PM",
+        "Status": "VISIBLE"
+    }, {
+        "First Name": "Raul",
+        "Last Name": "Salazar",
+        "Company": "ONIBEX",
+        "Job Title": "UX Consultant",
+        "Text": "Sergei es uno de los mejores Front End Developers con los que he colaborado, es una persona con iniciativa, creativa y meticulosa que propone soluciones y se mantiene actualizado con el día a día en tecnología y desarrollo.\r\n\r\nEspero volver a trabajar con el.",
+        "Creation Date": "3/21/17, 9:34 AM",
+        "Status": "VISIBLE"
+    }, {
+        "First Name": "Marco Antonio",
+        "Last Name": "Dominguez Rueda",
+        "Company": "EPAM Systems",
+        "Job Title": "Senior Software Engineer",
+        "Text": "Sergei is a developer who has strong skills on different technologies and is focused to improve constantly, reading about best practices and performance, keeping track the latest technologies, working side by side with his team mates to share his knowledge, asking constantly for feedback.\r\n\r\nI highly recommend Sergei for any kind of web development, he is an excellent developer and teammate.  ",
+        "Creation Date": "5/10/16, 6:33 AM",
+        "Status": "VISIBLE"
+    }],
+    "skills": [{
+        "Name": "JavaScript"
+    }, {
+        "Name": "React.js"
+    }, {
+        "Name": "AngularJS"
+    }, {
+        "Name": "HTML5"
+    }, {
+        "Name": "CSS"
+    }, {
+        "Name": "NodeJS"
+    }, {
+        "Name": "Responsive Web Design"
+    }, {
+        "Name": "Website Performance Optimization"
+    }, {
+        "Name": "C#"
+    }, {
+        "Name": "Linux"
+    }, {
+        "Name": "Ionic Framework"
+    }, {
+        "Name": "Gulp"
+    }, {
+        "Name": "Xamarin.Forms"
+    }, {
+        "Name": "jQuery"
+    }, {
+        "Name": "Java EE"
+    }, {
+        "Name": "Microsoft SQL Server"
+    }, {
+        "Name": "GruntJS"
+    }, {
+        "Name": "Entity Framework"
+    }, {
+        "Name": "Business English"
+    }, {
+        "Name": "BackboneJS"
+    }, {
+        "Name": "Redux"
+    }]
+}
