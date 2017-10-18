@@ -1,3 +1,4 @@
+// TODO: Remove jumbotron
 .jumbotron {
     height: 95vh;
     .title-container {
@@ -5,17 +6,27 @@
         transform: skewY(9deg);
     }
     h1 {
-        font-size: 9rem;
+        font-weight: 100;
+        font-size: 4em;
+        font-family: 'Roboto Mono';
         display: inline-block;
         position: relative;
     }
 }
 
-section {
-    &.large {
-        text-align: center;
-        p {
-            font-size: 5rem;
-        }
+section.main {
+    text-align: center;
+    padding: 10rem 0;
+    .title-container {
+        position: relative;
+        margin-bottom: 3em;
+    }
+    .subtitle {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        color: darken($primary-dark, 10%);
+        font-weight: 700;
+        z-index: -1;
     }
 }

@@ -1,15 +1,32 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Mono', 'Times New Roman', Times, serif;
+$h-multiplier: 0.25;
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: 1em + ((6 + 1 - $i) * $h-multiplier);
+    }
 }
 
 body {
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
     background-color: $primary-dark;
     color: $primary-light;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+}
+
 pre {
-    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 100;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;
@@ -17,6 +34,20 @@ pre {
     word-wrap: break-word;
 }
 
-section {
-    padding-top: 4rem;
+@include tablet {
+    body {
+        font-size: 20px;
+    }
+}
+
+@include laptop {
+    body {
+        font-size: 20px;
+    }
+}
+
+@include desktop {
+    body {
+        font-size: 30px;
+    }
 }

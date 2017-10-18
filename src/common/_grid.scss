@@ -1,0 +1,41 @@
+$grid-max-fraction: 6;
+
+@mixin responsive-columns($prefix) {
+    @for $fraction from 1 through $grid-max-fraction {
+        @for $size from 1 through $fraction {
+            .col-#{$prefix}-#{$size}-#{$fraction} {
+                width: (100% / $fraction) * $size;
+            }
+        }
+    }
+}
+
+;
+@mixin responsive-utilities($prefix) {
+    .visible-#{$prefix} {
+        display: auto;
+    }
+    .hidden-#{$prefix} {
+        display: none;
+    }
+}
+
+@mixin grid-system($size) {
+    @include responsive-utilities($size);
+    @include responsive-columns($size);
+}
+
+;
+@include grid-system(xs);
+
+@include tablet {
+    @include grid-system(sm);
+}
+
+@include laptop{
+    @include grid-system(md);
+}
+
+@include desktop {
+    @include grid-system(sm);
+}

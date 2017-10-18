@@ -1,40 +1,47 @@
 <div class="jumbotron has-child-centered">
-    <div class="container title-container slide-in-parent">
-        <h1 class="wow slide-in" data-wow-delay="0.5s">Sergei Garcia</h1>
+    <div class="container title-container hides-overflow">
+        <h1 class="reveal slide-into" data-wow-delay="0.5s">Sergei Garcia</h1>
     </div>
 </div>
 <div class="container">
-    <section class="large wow fade-in">
-        <h2>About Me</h2>
-        <p ng-bind="mainCtrl.profile.aboutMe"></p>
+    <section class="main">
+        <!-- TODO: Restructure this so GET TO KNOW ME is outside of overflow hidden. -->
+        <div class="title-container hides-overflow">
+            <h2 class="title reveal slide-into" data-wow-duration="1.5s">About</h2>
+            <h1 class="subtitle reveal fade-in" data-wow-duration="4s">GET TO KNOW ME</h1>
+        </div>
+        <p ng-bind="mainCtrl.profile.aboutMe"
+            class="reveal fade-in" data-wow-delay="1s"></p>
     </section>
-    <section>
-        <h2 class="section-title">Work Experience</h2>
-        <div ng-repeat="position in mainCtrl.positions">
-            <h5 ng-bind="position.title" class="has-subtitle"></h5>
-            <h6 ng-bind="position.company"></h6>
-            <pre ng-bind="position.description"></pre>
+    <section class="main">
+        <div class="title-container hides-overflow">
+            <h2 class="title reveal slide-into" data-wow-duration="2s">Work Experience</h2>
+        </div>
+        <div class="reveal fade-in" data-wow-delay="1s">
+            <div ng-repeat="position in mainCtrl.positions">
+                <h5 ng-bind="position.title" class="has-subtitle"></h5>
+                <h6 ng-bind="position.company"></h6>
+                <pre ng-bind="position.description"></pre>
+            </div>
         </div>
     </section>
-    <section>
-        <h2 class="section-title">Skills</h2>
-        <ul>
-            <li ng-repeat="skill in mainCtrl.skills" ng-bind="skill"></li>
-        </ul>
-    </section>
-    <section>
-        <h2 class="section-title">Certifications</h2>
-        <div ng-repeat="certification in mainCtrl.certifications">
-            <h6 ng-bind="certification.name" class="has-subtitle"></h6>
-            <p>{{certification.authority}} - {{certification.date.toLocaleDateString()}}</p>
+    <!-- <section class="main">
+        <div class="title-container hides-overflow">
+            <h2 class="title reveal slide-into" data-wow-duration="2s">Certifications</h2>
         </div>
-    </section>
-    <section>
+        <div class="reveal fade-in" data-wow-delay="0.5s">
+                <div ng-repeat="certification in mainCtrl.certifications">
+                    <h6 ng-bind="certification.name" class="has-subtitle"></h6>
+                    <p>{{certification.authority}} - {{certification.date.toLocaleDateString()}}</p>
+                </div>
+        </div>
+    </section> -->
+    <!-- <section>
         <h2 class="section-title">Recommendations</h2>
         <div ng-repeat="recommendation in mainCtrl.recommendations | orderBy: 'date'">
             <h5 ng-bind="recommendation.fullName" class="has-subtitle"></h5>
             <h6>{{recommendation.jobTitle}} - {{recommendation.company}} - {{recommendation.date.toLocaleDateString()}}</h6>
             <blockquote ng-bind="recommendation.content"></blockquote>
         </div>
-    </section>
+    </section> -->
 </div>
