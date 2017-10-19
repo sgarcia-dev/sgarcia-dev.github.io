@@ -1,5 +1,15 @@
 $grid-max-fraction: 6;
 
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
 @mixin responsive-columns($prefix) {
     @for $fraction from 1 through $grid-max-fraction {
         @for $size from 1 through $fraction {

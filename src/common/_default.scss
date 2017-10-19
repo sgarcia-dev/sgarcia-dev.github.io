@@ -20,13 +20,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-p {
+p, pre {
     font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 300;
 }
 
 pre {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 100;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -pre-wrap;

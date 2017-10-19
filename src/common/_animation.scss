@@ -17,6 +17,7 @@
     }
 }
 
+
 @keyframes slideInFrames {
     from {
         transform: translateY(150%);
@@ -26,8 +27,38 @@
     }
 }
 
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 .fade-in {
     animation-name: fadeIn;
+}
+
+.fade-in-down {
+    animation-name: fadeInDown;
+}
+
+.fade-in-right {
+    animation-name: fadeInRight;
 }
 
 .slide-into {

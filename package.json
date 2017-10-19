@@ -2,6 +2,8 @@
   "dependencies": {
     "angular": "^1.6.2",
     "angular-ui-router": "1.0.0-beta.3",
+    "animejs": "^2.2.0",
+    "font-awesome": "^4.7.0",
     "skeleton-css": "^2.0.4",
     "wowjs": "^1.1.3"
   },
