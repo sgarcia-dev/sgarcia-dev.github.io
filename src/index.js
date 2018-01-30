@@ -1,16 +1,11 @@
-import angular from 'angular';
-import {WOW} from 'wowjs';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import commonModule from './common/common.module';
-import componentsModule from './components/components.module';
-
-import 'angular-ui-router';
-import routesConfig from './routes';
+import {Hello} from './app/hello';
 
 import './index.scss';
 
-export const app = 'app';
-
-angular
-    .module(app, ['ui.router',  commonModule, componentsModule])
-    .config(routesConfig);
+ReactDOM.render(
+  <Hello/>,
+  document.getElementById('root')
+);

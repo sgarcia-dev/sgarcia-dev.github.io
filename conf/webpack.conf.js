@@ -34,14 +34,8 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: [
-          'ng-annotate-loader',
+          'react-hot-loader',
           'babel-loader'
-        ]
-      },
-      {
-        test: /\.html$/,
-        loaders: [
-          'html-loader'
         ]
       }
     ]
@@ -53,6 +47,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
     }),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.LoaderOptionsPlugin({
       options: {
         postcss: () => [autoprefixer]
@@ -65,5 +60,9 @@ module.exports = {
     path: path.join(process.cwd(), conf.paths.tmp),
     filename: 'index.js'
   },
-  entry: `./${conf.path.src('index')}`
+  entry: [
+    'webpack/hot/dev-server',
+    'webpack-hot-middleware/client',
+    `./${conf.path.src('index')}`
+  ]
 };

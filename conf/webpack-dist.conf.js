@@ -34,14 +34,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: [
-          'ng-annotate-loader',
           'babel-loader'
-        ]
-      },
-      {
-        test: /\.html$/,
-        loaders: [
-          'html-loader'
         ]
       }
     ]
@@ -52,6 +45,9 @@ module.exports = {
     FailPlugin,
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"production"'
     }),
     new webpack.optimize.UglifyJsPlugin({
       output: {comments: false},
