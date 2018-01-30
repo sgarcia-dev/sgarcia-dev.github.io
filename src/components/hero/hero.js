@@ -1,14 +1,45 @@
 import React, { Component } from 'react';
+import anime from 'animejs';
+
 import "./hero.scss"
 
 export class Hero extends Component {
+    componentDidMount() {
+        anime({
+            targets: '#subtitle-svg path',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: "easeInOutSine",
+            duration: 1000,
+            delay: this.parseToMilliseconds('1.5s'),
+            direction: "alternate",
+            loop: false
+        }); 
+    }
+
+    parseToMilliseconds(timeString) {
+        let number;
+        if (timeString.includes('s')) {
+            const numberString = timeString.substring(0, timeString.length - 1);
+            number = Math.round(parseFloat(numberString) * 1000);
+        } else if (timeString.includes('ms')) {
+            const numberString = timeString.substring(0, timeString.length - 2);
+            number = parseInt(numberString);
+        } else {
+            throw new Error('svgReveal.parseToMilliseconds ERROR: Was not passed a valid s or ms delay');
+        }
+    
+        return parseInt(number);
+    }
+
     render() {
         return (
-            <div className="hero has-child-centered">
+            <section className="l-hero has-child-centered">
                 <div className="container">
                     <div className="l-title hides-overflow">
-                        <h1 className="title reveal slide-into" data-wow-delay="0.5s">Sergei Garcia</h1>
-                        <h1 className="title-clone reveal fade-in" data-wow-delay="0.5s">Sergei Garcia</h1>
+                        <h1 className="title reveal slide-into">
+                            Sergei Garcia
+                        </h1>
+                        <h1 className="title shadow reveal fade-in">Sergei Garcia</h1>
                     </div>
                     <h3 className="l-subtitle">
                         <svg id="subtitle-svg" className="subtitle"
@@ -35,7 +66,7 @@ export class Hero extends Component {
                         </svg>
                     </h3>
                 </div>
-            </div>
+            </section>
         );
     }
 }

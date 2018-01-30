@@ -1,7 +1,7 @@
 @import "vars";
 @import "utils";
 
-.hero {
+.l-hero {
     height: 100vh;
     .skewed {
         position: relative;
@@ -11,32 +11,32 @@
     .l-title {
         position: relative;
     }
-    .title, .title-clone {
+
+    .title {
         width: 100%;
-    }
-    .title-clone {
-        position: absolute;
-        top: 0.05em;
-        left: 0.10em;
-        color: darken($primary-dark, 10%);
-        z-index: -1;
+        font-weight: 100;
+        font-size: 3em;
+        font-family: 'Roboto Mono';
+        display: inline-block;
+        position: relative;
+        &.shadow {
+            position: absolute;
+            top: 0.05em;
+            left: 0.10em;
+            color: darken($primary-dark, 10%);
+            z-index: -1;
+        }
     }
     .l-subtitle {
         width: 100%;
     }
     .subtitle {
         height: 1.5em;
-    }
-    h1 {
-        font-weight: 100;
-        font-size: 3em;
-        font-family: 'Roboto Mono';
-        display: inline-block;
-        position: relative;
-    }
-    path {
-        stroke: $primary-light !important;
-        stroke-width: 3px !important; 
+        path {
+            fill: none;
+            stroke: $primary-light;
+            stroke-width: 3px; 
+        }
     }
 }
 
@@ -92,24 +92,16 @@ section.main {
     }
 }
 
-#subtitle-svg {
-    path {
-        fill: none;
-        stroke: white;
-        stroke-width: 1px;
-    }
-}
-
 @include tablet {
-    .hero {
+    .l-hero {
         .skewed {
             transform-origin: 150%; 
         }
-        path {
-            stroke-width: 2px !important;
-        }
-        h1 {
+        .title {
             font-size: 4em;
+        }
+        .subtitle path {
+            stroke-width: 2px;
         }
     }
     .navbar {
@@ -118,12 +110,12 @@ section.main {
 }
 
 @include laptop {
-    .hero {
+    .l-hero {
         .skewed {
             transform-origin: 100%;
         }
-        path {
-            stroke-width: 1px !important;
+        .subtitle path {
+            stroke-width: 1px;
         }
     }
 }
