@@ -26,7 +26,14 @@ module.exports = {
         loaders: [
           'style-loader',
           'css-loader',
-          'sass-loader',
+          {
+            loader: "sass-loader",
+            options: {
+              includePaths: [
+                path.resolve(__dirname, "../src/common")
+              ]
+            }
+          },
           'postcss-loader'
         ]
       },

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {Hello} from './app/hello';
+import {App} from './app/app';
 
 import './index.scss';
 
 ReactDOM.render(
-  <Hello/>,
+  <App/>,
   document.getElementById('root')
 );
