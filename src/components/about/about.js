@@ -6,7 +6,7 @@ export class About extends Component {
         return (
             <section className="l-about">
                 <div className="container has-ch¡ld-centered">
-                    <p>Site in construction. Stay tunned for more.</p>
+                    <p>Site in construction. Alpha v0.2</p>
                 </div>
             </section>
         )
