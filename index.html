@@ -2,39 +2,163 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Sergei Garcia</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico">
-  <!--OPEN GRAPH -->
-	<meta property="og:title" content="Sergei Edoardo Garcia Ortega, Front End Developer" />
-	<meta property="og:description" content="Web Developer, Aspiring Designer, Tech Enthusiast & Blogger." />
+	<meta charset="utf-8">
+	<title>Sergei Garcia Ortega</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<!--OPEN GRAPH -->
+	<meta property="og:title" content="Sergei Edoardo Garcia Ortega, Fullstack Developer" />
+	<meta property="og:description" content="Developer, Mentor, Tech Enthusiast & Blogger." />
 	<meta property="og:url" content="http://sergeigarcia.xyz" />
-	<meta property="og:image" content="http://sergeigarcia.xyz/img/og-preview.png" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-  <!-- PWA -->
-  <link rel="manifest" href="./manifest.json">
-  <meta name="theme-color" content="#FF530D">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100|Roboto+Condensed:300,400|Roboto+Mono:300,400,500|Roboto+Slab:100,300,400,700|Roboto:100,300,400"
-    rel="stylesheet">
-<link href="index-d02b9ea222011d13178f63db57e774e0.css" rel="stylesheet"></head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+</head>
 
 <body>
-  <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto', Arial, Helvetica, sans-serif;
+			font-size: 24px;
+			;
+		}
 
-  <div id="root"></div>
-<script type="text/javascript" src="vendor-96f7649257cd550bd15f.js"></script><script type="text/javascript" src="app-96f7649257cd550bd15f.js"></script></body>
+		b,
+		a {
+			font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+		}
+
+		b#dev {
+			font-family: 'Roboto Mono';
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-weight: 100;
+		}
+
+		a {
+			color: hsl(0, 0%, 10%);
+			text-decoration: none;
+			padding-right: 0.2em;
+		}
+
+		a:visited {
+			color: hsl(0, 0%, 30%);
+		}
+
+		a:hover {
+			color: hsl(0, 0%, 50%);
+		}
+
+		body {
+			margin: 0 auto;
+			padding: 1rem;
+		}
+
+		h1 {
+			margin-top: 2em;
+		}
+
+		h1,
+		a {
+			opacity: 0;
+			animation-name: show;
+			animation-duration: 0.5s;
+			animation-delay: 500ms;
+			animation-fill-mode: forwards;
+		}
+
+		@media (min-width: 768px) {
+			body {
+				max-width: 700px;
+			}
+		}
+
+		@media (min-width: 992px) {
+			body {
+				max-width: 900px;
+				font-size: 32px;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			body {
+				max-width: 1150px;
+			}
+		}
+
+		@keyframes show {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+	<nav>
+		<a href="https://linkedin.com/in/sergeigarcia/">
+			<i class="fab fa-linkedin"></i>
+		</a>
+		<a href="http://github.com/sgarcia-dev">
+			<i class="fab fa-github"></i>
+		</a>
+		<a href="mailto:sgarcia.dev@gmail.com">
+			<i class="fas fa-at"></i>
+		</a>
+		<a href="https://drive.google.com/open?id=1tvjQNKxYrj_01g8k2pqI8ZZpFRK6lFiCAGjy_0RNzT8">- Resume</a>
+	</nav>
+	<h1>Hi, I'm <b>Sergei</b>, and I'm a <b id="dev"></b></h1>
+
+	<script>
+		const titles = [
+			'Fullstack Developer',
+			'Mentor',
+			'Lover of Design',
+			'Tech Enthusiast',
+			'Dog Lover'
+		]
+		const devEl = document.querySelector('#dev');
+		let currentTitle = 0;
+
+		setTimeout(() => {
+			animate(titles[currentTitle]);
+			currentTitle++;
+
+			window.setInterval(() => {
+				animate(titles[currentTitle]);
+				currentTitle = currentTitle < titles.length - 1 ? currentTitle + 1 : 0;
+			}, 6000);
+		}, 1000);
+
+		function animate(newTitle) {
+			let letter = 1;
+			const id = setInterval(() => {
+				devEl.innerHTML = newTitle.substr(0, letter);
+				letter++;
+				if (letter > newTitle.length) {
+					clearInterval(id);
+				}
+			}, 30)
+		}
+
+	</script>
+</body>
 
 </html>
