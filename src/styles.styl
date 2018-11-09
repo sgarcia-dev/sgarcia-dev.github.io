@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+b,
+a {
+  font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+}
+
+b#dev {
+  font-family: "Roboto Mono";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 100;
+}
+
+a {
+  color: hsl(0, 0%, 10%);
+  text-decoration: none;
+  padding-right: 0.2em;
+}
+
+a:visited {
+  color: hsl(0, 0%, 30%);
+}
+
+a:hover {
+  color: hsl(0, 0%, 50%);
+}
+
+body {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+h1,
+a {
+  opacity: 0;
+  animation-name: show;
+  animation-duration: 0.5s;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    max-width: 900px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1150px;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
