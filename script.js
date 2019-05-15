@@ -1,6 +1,6 @@
 const titles = [
-  "Fullstack Developer @ Luxoft GDL",
-  "Mentor @ Thinkful.com",
+  "Sr. Software Engineer @ Digital On Us MTY",
+  "FullStack Mentor @ Thinkful",
   "Web Design Enthusiast",
   "JS Fanatic",
   "Performance Advocate"
