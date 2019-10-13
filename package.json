@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "start": "parcel *.html -p 8080",
-    "build": "parcel build *.html"
+    "build": "parcel build *.html",
+    "gh-pages": "git subtree push --prefix dist origin master"
   },
   "repository": {
     "type": "git",
