@@ -4,7 +4,8 @@
   "description": "For the non-minified source code of the current release, please check the [v0.3](https://github.com/sgarcia-dev/sgarcia-dev.github.io/tree/v0.1) branch of this repo.",
   "main": "script.js",
   "scripts": {
-    "start": "parcel index.html -p 8080"
+    "start": "parcel *.html -p 8080",
+    "build": "parcel build *.html"
   },
   "repository": {
     "type": "git",
