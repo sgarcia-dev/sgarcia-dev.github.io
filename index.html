@@ -2,82 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Sergei Garcia Ortega</title>
+    <title>Sergei Garcia | Home</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width" />
     <!-- Favicon -->
     <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="/assets/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="/assets/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="/assets/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="/assets/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/assets/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/assets/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/assets/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/assets/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-icon-180x180.png"
-    />
-    <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/assets/favicon/android-icon-192x192.png"
+      href="assets/favicon/android-icon-192x192.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/assets/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <!-- OPEN GRAPH -->
     <meta
@@ -89,35 +23,66 @@
       content="Developer, Mentor, Tech Enthusiast & Blogger."
     />
     <meta property="og:url" content="http://sergeigarcia.xyz" />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/styles.scss" />
   </head>
 
   <body>
-    <nav class="animate">
-      <a href="https://linkedin.com/in/sergeigarcia/">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="http://github.com/sgarcia-dev">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="mailto:sgarcia.dev@gmail.com"> <i class="fas fa-at"></i> </a>
-      <a
-        href="https://drive.google.com/open?id=1tvjQNKxYrj_01g8k2pqI8ZZpFRK6lFiCAGjy_0RNzT8"
-        >| Resume</a
-      >
+    <div id="particles-js" class="animate"></div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light animate">
+      <a class="navbar-brand" href="index.html">Sergei Garcia</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor03"
+        aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="https://linkedin.com/in/sergeigarcia/">
+              <i class="fab fa-linkedin-in"></i>
+              <span class="d-sm-none">Linked In</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://github.com/sgarcia-dev">
+              <i class="fab fa-github"></i>
+              <span class="d-sm-none">Github</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="mailto:sgarcia.dev@gmail.com">
+              <i class="fas fa-envelope"></i>
+              <span class="d-sm-none">Email</span>
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="nav-item" href="about.html">About</a>
+          <a class="nav-item" href="contact.html">Contact</a>
+        </form>
+      </div>
     </nav>
-    <h1 class="page-title animate">Hi, I'm <b>Sergei</b>, and I'm a <b id="dev"></b></h1>
-    <script src="./script.js"></script>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4 animate">
+          Hi, I'm <b>Sergei</b>, and I'm a <b id="dev"></b>
+        </h1>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./src/landing.js"></script>
   </body>
 </html>

@@ -4,10 +4,7 @@
   "description": "For the non-minified source code of the current release, please check the [v0.3](https://github.com/sgarcia-dev/sgarcia-dev.github.io/tree/v0.1) branch of this repo.",
   "main": "script.js",
   "scripts": {
-    "dev": "concurrently --names \"serve, stylus\" --prefix name \"npm run serve\" \"npm run styles:watch\"",
-    "serve": "serve --single ./",
-    "styles": "stylus -u autoprefixer-stylus -c ./src/styles.styl -o ./styles.css",
-    "styles:watch": "stylus -u autoprefixer-stylus -c -w ./src/styles.styl -o ./styles.css"
+    "start": "parcel index.html -p 8080"
   },
   "repository": {
     "type": "git",
@@ -20,10 +17,12 @@
   },
   "homepage": "https://github.com/sgarcia-dev/sgarcia-dev.github.io#readme",
   "devDependencies": {
-    "autoprefixer-stylus": "^0.14.0",
     "concurrently": "^4.0.1",
-    "html-minifier": "^3.5.21",
-    "serve": "^10.0.2",
-    "stylus": "^0.54.5"
+    "parcel": "^1.12.4",
+    "sass": "^1.23.0",
+    "serve": "^11.2.0"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
