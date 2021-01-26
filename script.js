@@ -1,31 +1,124 @@
-import particlesJS from 'particles.js';
-particlesJS.load('particles-js', 'assets/particles.json', function () {
-  console.log('callback - particles.js config loaded');
-});
-const TITLES = ["Sr. Software Engineer @ Digital On Us MTY", "FullStack Mentor @ Thinkful", "Web Design Enthusiast", "JS Fanatic", "Performance Advocate"];
-const INIT_DELAY_SECONDS = 1;
-const CHANGE_DELAY_SECONDS = 2;
-const $TITLE = document.querySelector("#dev");
-let currentTitle = 0;
-setTimeout(updateDynamicTitle, INIT_DELAY_SECONDS * 1000);
+document.addEventListener('DOMContentLoaded', () => {
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
 
-function updateDynamicTitle(currentTitle = 0) {
-  animateNewTitle(TITLES[currentTitle]);
-  const nextTitle = currentTitle < TITLES.length - 1 ? currentTitle + 1 : 0;
-  setTimeout(() => {
-    updateDynamicTitle(nextTitle);
-  }, CHANGE_DELAY_SECONDS * 1000);
-}
-
-function animateNewTitle(newTitle, letter = 1) {
-  requestAnimationFrame(() => {
-    $TITLE.innerHTML = newTitle.substr(0, letter);
-    letter++;
-
-    if (letter <= newTitle.length) {
-      animateNewTitle(newTitle, letter);
-    }
+  window.particlesJS('particles-js', {
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: '#ffffff'
+      },
+      shape: {
+        type: 'circle',
+        stroke: {
+          width: 0,
+          color: '#000000'
+        },
+        polygon: {
+          nb_sides: 5
+        },
+        image: {
+          src: 'img/github.svg',
+          width: 100,
+          height: 100
+        }
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false
+        }
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#bababa',
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: 'none',
+        random: false,
+        straight: false,
+        out_mode: 'out',
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200
+        }
+      }
+    },
+    interactivity: {
+      detect_on: 'window',
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'repulse'
+        },
+        onclick: {
+          enable: true,
+          mode: 'push'
+        },
+        resize: true
+      },
+      modes: {
+        grab: {
+          distance: 400,
+          line_linked: {
+            opacity: 1
+          }
+        },
+        bubble: {
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 3
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4
+        },
+        push: {
+          particles_nb: 4
+        },
+        remove: {
+          particles_nb: 2
+        }
+      }
+    },
+    retina_detect: true
   });
-}
-
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9zY3JpcHQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxXQUFQLE1BQXdCLGNBQXhCO0FBRUEsV0FBVyxDQUFDLElBQVosQ0FBaUIsY0FBakIsRUFBaUMsdUJBQWpDLEVBQTBELFlBQVc7QUFDbkUsRUFBQSxPQUFPLENBQUMsR0FBUixDQUFZLHVDQUFaO0FBQ0QsQ0FGRDtBQUlBLE1BQU0sTUFBTSxHQUFHLENBQ2IsMkNBRGEsRUFFYiw2QkFGYSxFQUdiLHVCQUhhLEVBSWIsWUFKYSxFQUtiLHNCQUxhLENBQWY7QUFPQSxNQUFNLGtCQUFrQixHQUFHLENBQTNCO0FBQ0EsTUFBTSxvQkFBb0IsR0FBRyxDQUE3QjtBQUNBLE1BQU0sTUFBTSxHQUFHLFFBQVEsQ0FBQyxhQUFULENBQXVCLE1BQXZCLENBQWY7QUFFQSxJQUFJLFlBQVksR0FBRyxDQUFuQjtBQUVBLFVBQVUsQ0FBQyxrQkFBRCxFQUFxQixrQkFBa0IsR0FBRyxJQUExQyxDQUFWOztBQUVBLFNBQVMsa0JBQVQsQ0FBNEIsWUFBWSxHQUFHLENBQTNDLEVBQThDO0FBQzVDLEVBQUEsZUFBZSxDQUFDLE1BQU0sQ0FBQyxZQUFELENBQVAsQ0FBZjtBQUNBLFFBQU0sU0FBUyxHQUFHLFlBQVksR0FBRyxNQUFNLENBQUMsTUFBUCxHQUFnQixDQUEvQixHQUFtQyxZQUFZLEdBQUcsQ0FBbEQsR0FBc0QsQ0FBeEU7QUFDQSxFQUFBLFVBQVUsQ0FBQyxNQUFNO0FBQ2YsSUFBQSxrQkFBa0IsQ0FBQyxTQUFELENBQWxCO0FBQ0QsR0FGUyxFQUVQLG9CQUFvQixHQUFHLElBRmhCLENBQVY7QUFHRDs7QUFFRCxTQUFTLGVBQVQsQ0FBeUIsUUFBekIsRUFBbUMsTUFBTSxHQUFHLENBQTVDLEVBQStDO0FBQzdDLEVBQUEscUJBQXFCLENBQUMsTUFBTTtBQUMxQixJQUFBLE1BQU0sQ0FBQyxTQUFQLEdBQW1CLFFBQVEsQ0FBQyxNQUFULENBQWdCLENBQWhCLEVBQW1CLE1BQW5CLENBQW5CO0FBQ0EsSUFBQSxNQUFNOztBQUNOLFFBQUksTUFBTSxJQUFJLFFBQVEsQ0FBQyxNQUF2QixFQUErQjtBQUM3QixNQUFBLGVBQWUsQ0FBQyxRQUFELEVBQVcsTUFBWCxDQUFmO0FBQ0Q7QUFDRixHQU5vQixDQUFyQjtBQU9EIiwiZmlsZSI6InNjcmlwdC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBwYXJ0aWNsZXNKUyBmcm9tICdwYXJ0aWNsZXMuanMnO1xuXG5wYXJ0aWNsZXNKUy5sb2FkKCdwYXJ0aWNsZXMtanMnLCAnYXNzZXRzL3BhcnRpY2xlcy5qc29uJywgZnVuY3Rpb24oKSB7XG4gIGNvbnNvbGUubG9nKCdjYWxsYmFjayAtIHBhcnRpY2xlcy5qcyBjb25maWcgbG9hZGVkJyk7XG59KTtcblxuY29uc3QgVElUTEVTID0gW1xuICBcIlNyLiBTb2Z0d2FyZSBFbmdpbmVlciBAIERpZ2l0YWwgT24gVXMgTVRZXCIsXG4gIFwiRnVsbFN0YWNrIE1lbnRvciBAIFRoaW5rZnVsXCIsXG4gIFwiV2ViIERlc2lnbiBFbnRodXNpYXN0XCIsXG4gIFwiSlMgRmFuYXRpY1wiLFxuICBcIlBlcmZvcm1hbmNlIEFkdm9jYXRlXCJcbl07XG5jb25zdCBJTklUX0RFTEFZX1NFQ09ORFMgPSAxO1xuY29uc3QgQ0hBTkdFX0RFTEFZX1NFQ09ORFMgPSAyO1xuY29uc3QgJFRJVExFID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIiNkZXZcIik7XG5cbmxldCBjdXJyZW50VGl0bGUgPSAwO1xuXG5zZXRUaW1lb3V0KHVwZGF0ZUR5bmFtaWNUaXRsZSwgSU5JVF9ERUxBWV9TRUNPTkRTICogMTAwMCk7XG5cbmZ1bmN0aW9uIHVwZGF0ZUR5bmFtaWNUaXRsZShjdXJyZW50VGl0bGUgPSAwKSB7XG4gIGFuaW1hdGVOZXdUaXRsZShUSVRMRVNbY3VycmVudFRpdGxlXSk7XG4gIGNvbnN0IG5leHRUaXRsZSA9IGN1cnJlbnRUaXRsZSA8IFRJVExFUy5sZW5ndGggLSAxID8gY3VycmVudFRpdGxlICsgMSA6IDA7XG4gIHNldFRpbWVvdXQoKCkgPT4ge1xuICAgIHVwZGF0ZUR5bmFtaWNUaXRsZShuZXh0VGl0bGUpO1xuICB9LCBDSEFOR0VfREVMQVlfU0VDT05EUyAqIDEwMDApO1xufVxuXG5mdW5jdGlvbiBhbmltYXRlTmV3VGl0bGUobmV3VGl0bGUsIGxldHRlciA9IDEpIHtcbiAgcmVxdWVzdEFuaW1hdGlvbkZyYW1lKCgpID0+IHtcbiAgICAkVElUTEUuaW5uZXJIVE1MID0gbmV3VGl0bGUuc3Vic3RyKDAsIGxldHRlcik7XG4gICAgbGV0dGVyKys7XG4gICAgaWYgKGxldHRlciA8PSBuZXdUaXRsZS5sZW5ndGgpIHtcbiAgICAgIGFuaW1hdGVOZXdUaXRsZShuZXdUaXRsZSwgbGV0dGVyKTtcbiAgICB9XG4gIH0pO1xufSJdfQ==
+});
