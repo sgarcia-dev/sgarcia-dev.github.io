@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       },
       color: {
-        value: '#ffffff'
+        value: '#e3e3e3'
       },
       shape: {
         type: 'circle',
         stroke: {
-          width: 0,
-          color: '#000000'
+          width: 1,
+          color: '#e3e3e3'
         },
         polygon: {
           nb_sides: 5
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
       line_linked: {
         enable: true,
         distance: 150,
-        color: '#bababa',
+        color: '#ebebeb',
         opacity: 0.4,
         width: 1
       },
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       events: {
         onhover: {
           enable: true,
-          mode: 'repulse'
+          mode: 'grab'
         },
         onclick: {
           enable: true,

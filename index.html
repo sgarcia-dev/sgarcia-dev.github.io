@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     property="og:title"
-    content="Sergei Edoardo Garcia Ortega, Fullstack Developer"
+    content="Sergei Edoardo Garcia Ortega, Senior Software Engineer"
   />
   <meta
     property="og:description"
@@ -16,35 +16,54 @@
     rel="icon"
     type="image/png"
     sizes="192x192"
-    href="favicon/android-icon-192x192.png"
+    href="favicon/android-chrome-192x192.png"
   />
   <meta property="og:url" content="http://sergeigarcia.xyz" />
   <title>Sergei Garcia</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="background-color: transparent">
     <div class="navbar-brand">
       <a class="navbar-item" href="#">
         <img src="logo-cropped.png" height="28">
       </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+      <div class="navbar-item is-hidden-desktop">
+        <div class="buttons">
+          <a class="has-text-dark ml-5" href="https://www.linkedin.com/in/sergeigarcia/">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fa-lg fab fa-linkedin"></i>
+              </span>
+            </span>
+          </a>
+          <a class="has-text-dark ml-5" href="https://github.com/sgarcia-dev">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fa-lg fab fa-github"></i>
+              </span>
+            </span>
+          </a>
+          <a class="has-text-dark ml-5" href="mailto:sgarcia.dev@gmail.com">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fa-lg fas fa-envelope"></i>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-light has-text-dark" href="https://www.linkedin.com/in/sergeigarcia/">
+            <a class="has-text-dark ml-5" href="https://www.linkedin.com/in/sergeigarcia/">
               <span class="icon-text">
                 <span class="icon">
                   <i class="fab fa-linkedin"></i>
@@ -52,7 +71,7 @@
                 <span>LinkedIn</span>
               </span>
             </a>
-            <a class="button is-light has-text-dark" href="https://github.com/sgarcia-dev">
+            <a class="has-text-dark ml-5" href="https://github.com/sgarcia-dev">
               <span class="icon-text">
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -60,7 +79,7 @@
                 <span>GitHub</span>
               </span>
             </a>
-            <a class="button is-light has-text-dark" href="mailto:sgarcia.dev@gmail.com">
+            <a class="has-text-dark ml-5" href="mailto:sgarcia.dev@gmail.com">
               <span class="icon-text">
                 <span class="icon">
                   <i class="fas fa-envelope"></i>
